@@ -2,3 +2,47 @@ CountdownRoot:
 
 <CountdownRoot>
     orientation: "vertical"
+    GridLayout:
+        padding: 30
+        rows: 2
+        cols: 2
+        Label:
+            text: "Input"
+            size_hint_y: None
+            height: "30dp"
+        Label:
+            text: "Output"
+            size_hint_y: None
+            height: "30dp"
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: "Goal"
+            TextInput:
+                size_hint_y: None
+                height: "30dp"
+                id: "goal"
+                on_text: root.goal = self.text
+
+            Label:
+                text: "Numbers (Comma seperated)"
+            TextInput:
+                id: "numbers"
+                on_text: root.numbers = self.text
+
+        RecycleView:
+            id: "list_view"
+            data: []
+            default_size_hint: 1, None
+            orientation: 'vertical'
+
+
+    AnchorLayout:
+        padding: [50,0,50,0]
+        anchor_x: "center"
+        anchor_y: "center"
+        Button:
+            text: "Compute"
+            size_hint_y: None
+            height: "50dp"
+            on_release: root.results()

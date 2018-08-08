@@ -26,6 +26,7 @@ def countdown_solver(goal, nr_list):
     # Works but re-uses values (Cheats)
     nr_combinations = combinations(nr_list, 2)
     permutat = []
+    answers = []
     for i in nr_combinations:
         permutat.append("+".join(i))
         permutat.append("-".join(i))
@@ -39,8 +40,10 @@ def countdown_solver(goal, nr_list):
         overall.append("*".join(trio))
         overall.append("/".join(trio))
     for i in overall:
-        if eval(i) == goal:
-            print("{} = {}".format(i, eval(i)))
+        result = eval(i)
+        if result == goal:
+            answers.append({"expression": i, "answer": result})
+    return answers
 
 
 def countdown_solver_ii(goal, nr_list, length):
