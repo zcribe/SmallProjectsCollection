@@ -18,17 +18,19 @@ class cd:
 mod_folder = "F:\\Steam\\steamapps\\workshop\\content\\281990"
 descriptor_folder = "C:\\Users\\Erlend\\Documents\\Paradox Interactive\\Stellaris\\mod"
 
-# TODO: Muuda funktsiooniks 
+# TODO: Muuda funktsiooniks
 with cd(mod_folder): # TODO: Halb stack cd kasutus
     mods = os.listdir()
     for folder in mods:
         specific_mod_dir = "\\".join([mod_folder, folder])
         with cd(specific_mod_dir):
             current_files = os.listdir() # TODO: Puruneb kui mingi muu fail on kohvris
+            new_filename = ""
             try:
+                new_filename = "".join([folder, ".mod"])
                 with zipfile.ZipFile(current_files[0], "r")as myzip:
                         myzip.extract("descriptor.mod")
-                new_filename = "".join([folder, ".mod"])
+
 
                 mod_path = "\\".join([specific_mod_dir, current_files[0]])
 
@@ -44,6 +46,14 @@ with cd(mod_folder): # TODO: Halb stack cd kasutus
                 f.close()
 
                 os.rename("descriptor.mod", new_filename)
-                shutil.move("\\".join([specific_mod_dir, new_filename]), descriptor_folder)
+                shutil.move("\\".join([specific_mod_dir, new_filename]), descriptor_folder )
             except IndexError:
                 pass
+            except zipfile.BadZipFile:
+                os.remove(new_filename)
+                print("Multiple files in the folder or not a zip file {}".format(folder))
+            except shutil.Error:
+                with cd(descriptor_folder):
+                    files = os.listdir()
+                    for i in files:
+                        os.remove(i)
