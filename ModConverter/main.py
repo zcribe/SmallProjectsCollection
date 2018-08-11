@@ -18,13 +18,13 @@ class cd:
 mod_folder = "F:\\Steam\\steamapps\\workshop\\content\\281990"
 descriptor_folder = "C:\\Users\\Erlend\\Documents\\Paradox Interactive\\Stellaris\\mod"
 
-
-with cd(mod_folder):
+# TODO: Muuda funktsiooniks 
+with cd(mod_folder): # TODO: Halb stack cd kasutus
     mods = os.listdir()
     for folder in mods:
         specific_mod_dir = "\\".join([mod_folder, folder])
         with cd(specific_mod_dir):
-            current_files = os.listdir()
+            current_files = os.listdir() # TODO: Puruneb kui mingi muu fail on kohvris
             try:
                 with zipfile.ZipFile(current_files[0], "r")as myzip:
                         myzip.extract("descriptor.mod")
