@@ -1,6 +1,6 @@
 import os
 import zipfile
-import tempfile
+import shutil
 
 class cd:
     """Context manager for changing the current working directory"""
@@ -16,6 +16,7 @@ class cd:
 
 
 mod_folder = "F:\\Steam\\steamapps\\workshop\\content\\281990"
+descriptor_folder = "C:\\Users\\Erlend\\Documents\\Paradox Interactive\\Stellaris\\mod"
 
 
 with cd(mod_folder):
@@ -26,6 +27,23 @@ with cd(mod_folder):
             current_files = os.listdir()
             try:
                 with zipfile.ZipFile(current_files[0], "r")as myzip:
-                    myzip.extract("descriptor.mod", path=)
+                        myzip.extract("descriptor.mod")
+                new_filename = "".join([folder, ".mod"])
+
+                mod_path = "\\".join([specific_mod_dir, current_files[0]])
+
+                f = open("descriptor.mod", "r+", encoding="utf8")
+                d = f.readlines()
+                f.seek(0)
+                for i in d:
+                    if i == 'archive="{}"\n'.format(current_files[0]):
+                        f.write('path="{}"\n'.format(mod_path))
+                    else:
+                        f.write(i)
+                f.truncate()
+                f.close()
+
+                os.rename("descriptor.mod", new_filename)
+                shutil.move("\\".join([specific_mod_dir, new_filename]), descriptor_folder)
             except IndexError:
                 pass
