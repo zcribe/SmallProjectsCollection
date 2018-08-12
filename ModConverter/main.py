@@ -38,7 +38,7 @@ with cd(mod_folder): # TODO: Halb stack cd kasutus
 
                 mod_path = "\\".join(["workshop\\content\\281990\\LinkedDir", folder, current_files[0]]).replace("\\", "/")
 
-                f = open("descriptor.mod", "r+", encoding="utf-8-sig")
+                f = open("descriptor.mod", "r+", encoding="utf8")
                 d = f.readlines()
                 f.seek(0)
                 for i in d:
