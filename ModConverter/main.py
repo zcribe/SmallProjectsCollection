@@ -19,6 +19,11 @@ mod_folder = "F:\\Steam\\steamapps\\workshop\\content\\281990"
 descriptor_folder = "C:\\Users\\Erlend\\Documents\\Paradox Interactive\\Stellaris\\mod"
 
 # TODO: Muuda funktsiooniks
+with cd("C:\\Users\\Erlend\\Documents\\Paradox Interactive\\Stellaris\\mod"):
+    files = os.listdir()
+    for i in files:
+        os.remove(i)
+
 with cd(mod_folder): # TODO: Halb stack cd kasutus
     mods = os.listdir()
     for folder in mods:
