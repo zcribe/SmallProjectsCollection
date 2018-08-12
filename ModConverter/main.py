@@ -31,8 +31,7 @@ with cd(mod_folder): # TODO: Halb stack cd kasutus
                 with zipfile.ZipFile(current_files[0], "r")as myzip:
                         myzip.extract("descriptor.mod")
 
-
-                mod_path = "\\".join([specific_mod_dir, current_files[0]])
+                mod_path = "\\".join(["workshop\\content\\281990\\LinkedDir", folder, current_files[0]]).replace("\\", "/")
 
                 f = open("descriptor.mod", "r+", encoding="utf8")
                 d = f.readlines()
