@@ -60,10 +60,10 @@ def create_descriptors(mod_folder):
                     os.rename("descriptor.mod", new_filename)
                     shutil.move("\\".join([specific_mod_dir, new_filename]), descriptor_folder )
                 except IndexError:
-                    pass
+                    print("Empty folder: {}".format(folder))
                 except zipfile.BadZipFile:
                     os.remove(new_filename)
-                    print("Multiple files in the folder or not a zip file {}".format(folder))
+                    print("Multiple files in the folder or not a zip file: {}".format(folder))
                 except shutil.Error:
                     with cd(descriptor_folder):
                         files = os.listdir()
