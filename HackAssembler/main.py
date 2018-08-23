@@ -3,6 +3,7 @@ import re
 
 class Assembler:
     def file_manager(self):
+        # TODO: Failide manager I/O
         pass
 
     def whitespace_remover(self, document):
@@ -37,6 +38,8 @@ class Assembler:
             destination = split_instruction[0]
             component = split_instruction[1]
 
+            # TODO: Lahenda Jump instrunktsioonide probleem.
+
             component_control = '0'
             if 'M' in component:
                 component_control = '1'
@@ -66,7 +69,7 @@ class Assembler:
             try:
                 variables.remove('SCREEN')
                 variables.remove('KBD')
-                for nr in range(1, 15):
+                for nr in range(0, 15):
                     variables.remove('@R{}'.format(nr))
             except ValueError:
                 pass
@@ -77,9 +80,7 @@ class Assembler:
             translation_table = dict(zip(no_empty_variables, memory_locations))
             translation_table['@SCREEN'] = '@16384'
             translation_table['@KBD'] = '@24576'
-            # for nr in range(1, 15):
-            #     indx = '@R{}'.format(nr)
-            #     translation_table[indx] = "@{}".format((nr - 1))
+            # TODO: Lahenda R1-R15 translation
 
             lines = document.split('\n')
             no_variable_document = lines
