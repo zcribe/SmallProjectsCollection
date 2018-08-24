@@ -1,9 +1,7 @@
 import unittest
 
 from .main import Assembler
-from .sample_strings import test_string_one, test_string_two, whitespace_result_string_one, \
-    whitespace_result_string_two, symbol_translated_one, symbol_translated_two, machine_code_one, \
-    machine_code_two
+from .sample_strings import *
 
 
 class TestInstructionTranslator(unittest.TestCase):
@@ -41,8 +39,28 @@ class TestWhiteSpaceRemover(unittest.TestCase):
         self.assertEqual(a.whitespace_remover(test_string_two), whitespace_result_string_two)
 
 
+class TestIntructionSequence(unittest.TestCase):
+    def sequence_helper(self, instructions, machine_code):
+        a = Assembler()
+        string = a.whitespace_remover(instructions)
+        lines = string.split('\n')
+        control = machine_code.split('\n')
+        test = zip(lines, control)
+        for i, v in test:
+            self.assertEqual(a.instruction_translator(i), v)
+
+    def test_sequences(self):
+        self.sequence_helper(test_string_three_add_symboless, machine_code_three_add)
+        self.sequence_helper(test_string_eight_rect_symboless, machine_code_five_rect)
+        self.sequence_helper(test_string_five_max_symboless, machine_code_four_max)
+        self.sequence_helper(test_string_six_pong_symboless, machine_code_five_pong)
+
+
 class TestSymbolTranslator(unittest.TestCase):
-    def test_symbol_translator(self):
+    def test_symbol_translator_stock(self):
+        a = Assembler()
+
+    def test_symbol_translator_own(self):
         a = Assembler()
         self.assertEqual(a.symbol_translator(whitespace_result_string_one), symbol_translated_one)
         self.assertEqual(a.symbol_translator(whitespace_result_string_two), symbol_translated_two)
@@ -54,3 +72,6 @@ class TestAssembler(unittest.TestCase):
         a = Assembler()
         self.assertEqual(a.assemble_instructions(test_string_one), machine_code_one)
         self.assertEqual(a.assemble_instructions(test_string_two), machine_code_two)
+        self.assertEqual(a.assemble_instructions(test_string_four_max), machine_code_four_max)
+        self.assertEqual(a.assemble_instructions(test_string_nine_rect), machine_code_five_rect)
+        self.assertEqual(a.assemble_instructions(test_string_seven_pong), machine_code_five_pong)

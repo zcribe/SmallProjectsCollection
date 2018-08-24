@@ -2,9 +2,12 @@ import re
 
 
 class Assembler:
-    def file_manager(self):
-        # TODO: Failide manager I/O
+    def input_file(self):
         pass
+
+    def output_file(self, output):
+        with open('machine_code.hack', 'w+', encoding='utf8') as f:
+            f.write(output)
 
     def whitespace_remover(self, document):
         uncommented = re.sub(r'(//[\S ]*)', '', document)
@@ -20,10 +23,12 @@ class Assembler:
         def _c_instruction_translator(instruction):
             component_table = [('D|A', '010101'), ('A+1', '110111'), ('D&A', '000000'), ('D+A', '000010'),
                                ('M-1', '110010'), ('M+1', '110111'), ('D&M', '000000'), ('A-1', '110010'),
-                               ('D-M', '010011'), ('M-D', '000111'), ('M+D', '000010'), ('D|M', '010101'),
+                               ('D-M', '010011'), ('M-D', '000111'), ('M+D', '000010'), ('D+M', '000010'),
+                               ('D|M', '010101'),
                                ('A-D', '000111'), ('D-1', '001110'), ('D-A', '010011'), ('A|D', '010101'),
                                ('1+A', '110111'), ('A&D', '000000'), ('A+D', '000010'), ('M&D', '000000'),
-                               ('1+D', '011111'), ('M|D', '010101'), ('-M', '110011'), ('!A', '110001'),
+                               ('1+D', '011111'), ('D+1', '011111'), ('M|D', '010101'), ('-M', '110011'),
+                               ('!A', '110001'),
                                ('!M', '110001'), ('-1', '111010'), ('!D', '001101'),
                                ('-A', '110011'), ('-D', '001111'), ('D', '001100'), ('A', '110000'),
                                ('M', '110000')]
@@ -138,8 +143,22 @@ class Assembler:
         no_symbols = self.symbol_translator(no_whitespace)
         instruction_list = no_symbols.split('\n')
         machine_code_instructions = [self.instruction_translator(instruction) for instruction in instruction_list]
+        self.output_file("\n".join(machine_code_instructions))
         return "\n".join(machine_code_instructions)
 
 
 a = Assembler()
-print(a.instruction_translator('''M=D'''))
+a.assemble_instructions('''// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/06/add/Add.asm
+
+// Computes R0 = 2 + 3  (R0 refers to RAM[0])
+
+@2
+D=A
+@3
+D=D+A
+@0
+M=D
+''')
