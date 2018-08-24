@@ -105,15 +105,18 @@ class Assembler:
             translation_table = dict(zip(no_empty_variables, memory_locations))
             translation_table['@SCREEN'] = '@16384'
             translation_table['@KBD'] = '@24576'
-            # TODO: Lahenda R1-R15 translation
+            for nr in range(0, 15):
+                translation_table['@R{}'.format(nr)] = "@{}".format(nr)
 
             lines = document.split('\n')
             no_variable_document = lines
 
+            line_counter = 0
             for line in lines:
                 for translation in translation_table:
                     if translation in line:
-                        no_variable_document[lines.index(line)] = translation_table[translation]
+                        no_variable_document[line_counter] = translation_table[translation]
+                line_counter += 1
 
             return '\n'.join(no_variable_document)
 
@@ -155,22 +158,20 @@ class Assembler:
         return "\n".join(machine_code_instructions)
 
 
-a = Assembler()
-a.assemble_instructions('''// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/06/add/Add.asm
-
-// Computes R0 = 2 + 3  (R0 refers to RAM[0])
-
-@2
-D=A
-@3
-D=D+A
-@0
-M=D
-''')
-
 if __name__ == '__main__':
     a = Assembler()
-    a.input_file()
+    # a.input_file()
+    a.assemble_instructions('''// This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/06/add/Add.asm
+
+    // Computes R0 = 2 + 3  (R0 refers to RAM[0])
+
+    @2
+    D=A
+    @3
+    D=D+A
+    @0
+    M=D
+    ''')
