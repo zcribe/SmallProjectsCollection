@@ -39,7 +39,7 @@ class TestWhiteSpaceRemover(unittest.TestCase):
         self.assertEqual(a.whitespace_remover(test_string_two), whitespace_result_string_two)
 
 
-class TestIntructionSequence(unittest.TestCase):
+class TestInstructionSequence(unittest.TestCase):
     def sequence_helper(self, instructions, machine_code):
         a = Assembler()
         string = a.whitespace_remover(instructions)
