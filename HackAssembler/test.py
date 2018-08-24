@@ -57,9 +57,6 @@ class TestInstructionSequence(unittest.TestCase):
 
 
 class TestSymbolTranslator(unittest.TestCase):
-    def test_symbol_translator_stock(self):
-        a = Assembler()
-
     def test_symbol_translator_own(self):
         a = Assembler()
         self.assertEqual(a.symbol_translator(whitespace_result_string_one), symbol_translated_one)

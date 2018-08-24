@@ -89,15 +89,16 @@ class Assembler:
             return _c_instruction_translator(line)
 
     def symbol_translator(self, document):
-        def variable_translator(document):
+        def _variable_translator(document):
             variables = list(set(re.findall('@([A-Za-z]*)', document)))
             try:
                 variables.remove('SCREEN')
                 variables.remove('KBD')
-                for nr in range(0, 15):
-                    variables.remove('@R{}'.format(nr))
+                # for nr in range(0, 15):
+                # variables.remove('@R{}'.format(nr))
             except ValueError:
                 pass
+            # TODO: Kasuta R2 - 15 kui vaba
 
             no_empty_variables = ['@{}'.format(i) for i in variables if i]
 
@@ -106,7 +107,8 @@ class Assembler:
             translation_table['@SCREEN'] = '@16384'
             translation_table['@KBD'] = '@24576'
             for nr in range(0, 15):
-                translation_table['@R{}'.format(nr)] = "@{}".format(nr)
+                if '@R{}'.format(nr) not in variables:
+                    translation_table['@R{}'.format(nr)] = "@{}".format(nr)
 
             lines = document.split('\n')
             no_variable_document = lines
@@ -120,7 +122,7 @@ class Assembler:
 
             return '\n'.join(no_variable_document)
 
-        def label_translator(document):
+        def _label_translator(document):
             labels = re.findall('\((.*?)\)', document)
             at_labels = ['@{}'.format(label) for label in labels]
 
@@ -142,8 +144,8 @@ class Assembler:
 
             return '\n'.join(no_label_document)
 
-        no_label_document = label_translator(document)
-        no_variable_document = variable_translator(no_label_document)
+        no_label_document = _label_translator(document)
+        no_variable_document = _variable_translator(no_label_document)
 
         return no_variable_document
 
