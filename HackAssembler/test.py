@@ -2,7 +2,8 @@ import unittest
 
 from .main import Assembler
 from .sample_strings import test_string_one, test_string_two, whitespace_result_string_one, \
-    whitespace_result_string_two, symbol_translated_one, symbol_translated_two
+    whitespace_result_string_two, symbol_translated_one, symbol_translated_two, machine_code_one, \
+    machine_code_two
 
 
 class TestInstructionTranslator(unittest.TestCase):
@@ -23,6 +24,7 @@ class TestInstructionTranslator(unittest.TestCase):
         self.assertEqual(a.instruction_translator('0;JMP'), '1110101010000111')
         self.assertEqual(a.instruction_translator('M;JGT'), '1111110000000001')
         self.assertEqual(a.instruction_translator('A;JGT'), '1110110000000001')
+        self.assertEqual(a.instruction_translator('D=A'), '1110110000010000')
 
     def test_a_instructions(self):
         a = Assembler()
@@ -47,4 +49,8 @@ class TestSymbolTranslator(unittest.TestCase):
 
 
 class TestAssembler(unittest.TestCase):
-    pass
+    def test_assembler(self):
+        # self.maxDiff = None
+        a = Assembler()
+        self.assertEqual(a.assemble_instructions(test_string_one), machine_code_one)
+        self.assertEqual(a.assemble_instructions(test_string_two), machine_code_two)
