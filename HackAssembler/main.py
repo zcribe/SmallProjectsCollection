@@ -1,9 +1,15 @@
 import re
+import sys
 
 
 class Assembler:
     def input_file(self):
-        pass
+        try:
+            with open(sys.argv[1], 'r') as f:
+                document = f.read()
+            self.assemble_instructions(document)
+        except FileNotFoundError:
+            print('No such file "{}"'.format(sys.argv[1]))
 
     def output_file(self, output):
         with open('machine_code.hack', 'w+', encoding='utf8') as f:
@@ -139,11 +145,13 @@ class Assembler:
         return no_variable_document
 
     def assemble_instructions(self, document_string):
+        print('Assembling...')
         no_whitespace = self.whitespace_remover(document_string)
         no_symbols = self.symbol_translator(no_whitespace)
         instruction_list = no_symbols.split('\n')
         machine_code_instructions = [self.instruction_translator(instruction) for instruction in instruction_list]
         self.output_file("\n".join(machine_code_instructions))
+        print('Operation was successful')
         return "\n".join(machine_code_instructions)
 
 
@@ -162,3 +170,7 @@ D=D+A
 @0
 M=D
 ''')
+
+if __name__ == '__main__':
+    a = Assembler()
+    a.input_file()
