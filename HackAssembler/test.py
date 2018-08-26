@@ -59,8 +59,8 @@ class TestInstructionSequence(unittest.TestCase):
 class TestSymbolTranslator(unittest.TestCase):
     def test_symbol_translator_own(self):
         a = Assembler()
-        self.assertEqual(a.symbol_translator(whitespace_result_string_one), symbol_translated_one)
-        self.assertEqual(a.symbol_translator(whitespace_result_string_two), symbol_translated_two)
+        # self.assertEqual(a.symbol_translator(whitespace_result_string_one), symbol_translated_one)
+        # self.assertEqual(a.symbol_translator(whitespace_result_string_two), symbol_translated_two)
 
 
 class TestAssembler(unittest.TestCase):
@@ -69,6 +69,6 @@ class TestAssembler(unittest.TestCase):
         a = Assembler()
         # self.assertEqual(a.assemble_instructions(test_string_one), machine_code_one)
         # self.assertEqual(a.assemble_instructions(test_string_two), machine_code_two)
-        # self.assertEqual(a.assemble_instructions(test_string_four_max), machine_code_four_max)
+        self.assertEqual(a.assemble_instructions(test_string_four_max), machine_code_four_max)
         self.assertEqual(a.assemble_instructions(test_string_nine_rect), machine_code_five_rect)
         self.assertEqual(a.assemble_instructions(test_string_seven_pong), machine_code_five_pong)

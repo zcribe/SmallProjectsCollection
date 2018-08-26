@@ -22,7 +22,6 @@ class Assembler:
         return '\n'.join(no_empty_rows)
 
     def instruction_translator(self, line):
-
         def _a_instruction_translator(instruction):
             return '{0:016b}'.format(int(instruction.replace('@', '')))
 
@@ -89,81 +88,65 @@ class Assembler:
             return _c_instruction_translator(line)
 
     def symbol_translator(self, document):
-        def _variable_translator(document):
-            screen_map_start_bit = '@16384'
-            keyboard_map_start_bit = '@24576'
-            pre_reserved_range = range(0, 16)
-            pre_reserved_edge = pre_reserved_range[-1]
-            lines_document = document.split('\n')
-            lines_document_cleaned = lines_document
-            address_table = []
-            variables = []
+        screen_map_start_bit = '@16384'
+        keyboard_map_start_bit = '@24576'
+        pre_reserved_range = range(0, 16)
+        pre_reserved_edge = pre_reserved_range[-1] + 1
+        lines_document = document.split('\n')
+        lines_document_cleaned = lines_document
+        address_table = []
+        variables = []
+        labels = []
 
-            for line in lines_document:
-                if '@' in line:
-                    address_table.append(line)
+        for line in lines_document:
+            if '@' in line:
+                address_table.append(line)
+            elif '(' in line:
+                labels.append(line)
+                address_table.append(line)
 
-            for address in address_table:
-                try:
-                    int(address[1:])
-                except ValueError:
-                    variables.append(address)
+        for address in address_table:
+            try:
+                int(address[1:])
+            except ValueError:
+                variables.append(address)
 
-            if '@SCREEN' in variables:
-                variables.remove('@SCREEN')
-            if '@KBD' in variables:
-                variables.remove('@KBD')
+        for variable in variables:
+            for label in labels:
+                if str(label[1:-1]) == str(variable[1:]):
+                    variables.remove(variable)
 
-            for nr in pre_reserved_range:
-                current = '@R{}'.format(nr)
-                if current in variables:
-                    variables.remove(current)
+        for variable in variables:
+            if '(' in variable:
+                variables[variables.index(variable)] = '@{}'.format(variable[1:-1])
 
-            variables = list(set(filter(None, variables)))
-            definitions = ['@{}'.format((variables.index(i) + pre_reserved_edge)) for i in variables]
-            translation_table = dict(zip(variables, definitions))
+        if '@SCREEN' in variables:
+            variables.remove('@SCREEN')
+        if '@KBD' in variables:
+            variables.remove('@KBD')
 
-            translation_table['@SCREEN'] = screen_map_start_bit
-            translation_table['@KBD'] = keyboard_map_start_bit
+        for nr in pre_reserved_range:
+            current = '@R{}'.format(nr)
+            if current in variables:
+                variables.remove(current)
 
-            for nr in pre_reserved_range:
-                translation_table['@R{}'.format(nr)] = '@{}'.format(nr)
+        variables = list(set(filter(None, variables)))
+        definitions = ['@{}'.format((variables.index(i) + pre_reserved_edge)) for i in variables]
+        translation_table = dict(zip(variables, definitions))
 
-            for line in lines_document:
-                for translation in translation_table:
-                    if translation in line:
-                        lines_document_cleaned[lines_document.index(line)] = translation_table[translation]
+        translation_table['@SCREEN'] = screen_map_start_bit
+        translation_table['@KBD'] = keyboard_map_start_bit
+        for nr in pre_reserved_range:
+            translation_table['@R{}'.format(nr)] = '@{}'.format(nr)
+        for line in lines_document:
+            for translation in translation_table:
+                if translation == line:
+                    lines_document_cleaned[lines_document.index(line)] = translation_table[translation]
 
-            return '\n'.join(lines_document_cleaned)
-
-        def _label_translator(document):
-            print(document)
-            labels = re.findall('\((.*?)\)', document)
-            at_labels = ['@{}'.format(label) for label in labels]
-
-            memory_locations = []
-            lines = document.split('\n')
-
-            # Find declarations, save line nrs, remove them
-            [memory_locations.append(lines.index(line)) for line in lines if '(' in line]
-            undeclared_document = [i for i in lines if not '(' in i]
-
-            translation_table = dict(zip(at_labels, memory_locations))
-
-            no_label_document = undeclared_document
-            for line in undeclared_document:
-                for translation in translation_table:
-                    if translation in line:
-                        no_label_document[undeclared_document.index(line)] = '@{}'.format(
-                            translation_table[translation])
-
-            return '\n'.join(no_label_document)
-
-        no_label_document = _label_translator(document)
-        no_variable_document = _variable_translator(no_label_document)
-        print('-------')
-        print(no_variable_document)
-        return no_variable_document
+        for line in lines_document_cleaned:
+            if '(' in line:
+                lines_document_cleaned.remove(line)
+        return '\n'.join(lines_document_cleaned)
 
     def assemble_instructions(self, document_string):
         print('Assembling...')
@@ -179,17 +162,4 @@ class Assembler:
 if __name__ == '__main__':
     a = Assembler()
     # a.input_file()
-    a.assemble_instructions('''// This file is part of www.nand2tetris.org
-    // and the book "The Elements of Computing Systems"
-    // by Nisan and Schocken, MIT Press.
-    // File name: projects/06/add/Add.asm
-
-    // Computes R0 = 2 + 3  (R0 refers to RAM[0])
-
-    @2
-    D=A
-    @3
-    D=D+A
-    @0
-    M=D
-    ''')
+    print(a.symbol_translator('(ball.new)'))
