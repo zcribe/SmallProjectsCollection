@@ -90,39 +90,54 @@ class Assembler:
 
     def symbol_translator(self, document):
         def _variable_translator(document):
-            variables = list(set(re.findall('@([A-Za-z]*)', document)))
-            try:
-                variables.remove('SCREEN')
-                variables.remove('KBD')
-                # for nr in range(0, 15):
-                # variables.remove('@R{}'.format(nr))
-            except ValueError:
-                pass
-            # TODO: Kasuta R2 - 15 kui vaba
+            screen_map_start_bit = '@16384'
+            keyboard_map_start_bit = '@24576'
+            pre_reserved_range = range(0, 16)
+            pre_reserved_edge = pre_reserved_range[-1]
+            lines_document = document.split('\n')
+            lines_document_cleaned = lines_document
+            address_table = []
+            variables = []
 
-            no_empty_variables = ['@{}'.format(i) for i in variables if i]
+            for line in lines_document:
+                if '@' in line:
+                    address_table.append(line)
 
-            memory_locations = ['@{}'.format((no_empty_variables.index(i) + 16)) for i in no_empty_variables]
-            translation_table = dict(zip(no_empty_variables, memory_locations))
-            translation_table['@SCREEN'] = '@16384'
-            translation_table['@KBD'] = '@24576'
-            for nr in range(0, 15):
-                if '@R{}'.format(nr) not in variables:
-                    translation_table['@R{}'.format(nr)] = "@{}".format(nr)
+            for address in address_table:
+                try:
+                    int(address[1:])
+                except ValueError:
+                    variables.append(address)
 
-            lines = document.split('\n')
-            no_variable_document = lines
+            if '@SCREEN' in variables:
+                variables.remove('@SCREEN')
+            if '@KBD' in variables:
+                variables.remove('@KBD')
 
-            line_counter = 0
-            for line in lines:
+            for nr in pre_reserved_range:
+                current = '@R{}'.format(nr)
+                if current in variables:
+                    variables.remove(current)
+
+            variables = list(set(filter(None, variables)))
+            definitions = ['@{}'.format((variables.index(i) + pre_reserved_edge)) for i in variables]
+            translation_table = dict(zip(variables, definitions))
+
+            translation_table['@SCREEN'] = screen_map_start_bit
+            translation_table['@KBD'] = keyboard_map_start_bit
+
+            for nr in pre_reserved_range:
+                translation_table['@R{}'.format(nr)] = '@{}'.format(nr)
+
+            for line in lines_document:
                 for translation in translation_table:
                     if translation in line:
-                        no_variable_document[line_counter] = translation_table[translation]
-                line_counter += 1
+                        lines_document_cleaned[lines_document.index(line)] = translation_table[translation]
 
-            return '\n'.join(no_variable_document)
+            return '\n'.join(lines_document_cleaned)
 
         def _label_translator(document):
+            print(document)
             labels = re.findall('\((.*?)\)', document)
             at_labels = ['@{}'.format(label) for label in labels]
 
@@ -146,7 +161,8 @@ class Assembler:
 
         no_label_document = _label_translator(document)
         no_variable_document = _variable_translator(no_label_document)
-
+        print('-------')
+        print(no_variable_document)
         return no_variable_document
 
     def assemble_instructions(self, document_string):
