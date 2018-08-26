@@ -143,10 +143,11 @@ class Assembler:
                 if translation == line:
                     lines_document_cleaned[lines_document.index(line)] = translation_table[translation]
 
+        output = []
         for line in lines_document_cleaned:
-            if '(' in line:
-                lines_document_cleaned.remove(line)
-        return '\n'.join(lines_document_cleaned)
+            if ')' not in line:
+                output.append(line)
+        return '\n'.join(output)
 
     def assemble_instructions(self, document_string):
         print('Assembling...')
@@ -161,5 +162,4 @@ class Assembler:
 
 if __name__ == '__main__':
     a = Assembler()
-    # a.input_file()
-    print(a.symbol_translator('(ball.new)'))
+    a.input_file()
