@@ -9,6 +9,7 @@ import sys
 
 class Parser:
     def __init__(self):
+        self.filename = sys.argv[1].split('.')[0]
         self.document = None
         self.instructions = None
 
@@ -16,7 +17,7 @@ class Parser:
         self.input()
         self.whitespace_remover()
         self.instruction_separator()
-        return self.instructions
+        return self.instructions, self.filename
 
     def input(self):
         try:
@@ -42,16 +43,21 @@ class Parser:
 
 class CodeWriter:
     def __init__(self):
+        self.parse_result = None
+        self.filename = None
         self.instructions = []
         self.instructions_assembly = []
 
     def main(self):
-        self.instructions = Parser().main()
+        self.parse_result = Parser().main()
+        self.instructions = self.parse_result[0]
+        self.filename = self.parse_result[1]
         for instruction in self.instructions:
             self.instruction_type_separator(instruction)
 
     def output(self):
-        pass
+        with open('{}.asm'.format(self.filename), 'w') as f:
+            f.write('\n'.join(self.instructions_assembly))
 
     def instruction_type_separator(self, instruction):
         arg1 = instruction[0]
@@ -63,15 +69,15 @@ class CodeWriter:
             self.logical_translator(instruction)
 
     def memory_translator(self, instruction):
-        arg1 = instruction[1]
-        arg2 = instruction[2]
+        arg0, arg1, arg2 = instruction
         if arg1 == 'pop':
             self.instructions_assembly.extend(None)
         else:
-            push = ['// push {} {}', '@{}', 'D=A', '@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
-            push[0] = push[0].format(arg1, arg2)
-            push[1] = push[1].format(arg2)
-            self.instructions_assembly.extend(push)
+            # Push
+            symbols = ['// {} {} {}', '@{}', 'D=A', '@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+            symbols[0] = symbols[0].format(arg0, arg1, arg2)
+            symbols[1] = symbols[1].format(arg2)
+            self.instructions_assembly.extend(symbols)
 
     def arithmetic_translator(self, instruction):
         if instruction[0] == 'add':
