@@ -9,15 +9,13 @@ import sys
 
 class Parser:
     def __init__(self):
-        self.arg1 = None
-        self.arg2 = None
-        self.location = None
-        self.more_commands = False
-        self.command_type = None
         self.document = None
+        self.instructions = None
 
+    def main(self):
         self.input()
         self.whitespace_remover()
+        self.instruction_separator()
 
     def input(self):
         try:
@@ -31,12 +29,17 @@ class Parser:
     def whitespace_remover(self):
         document = self.document
         uncommented = re.sub(r'(//[\S ]*)', '', document)
-        de_whitespace = uncommented.replace(' ', '')
-        no_empty_rows = [line for line in de_whitespace.split('\n') if line.strip() != '']
-        self.document = '\n'.join(no_empty_rows)
+        no_empty_rows = [line for line in uncommented.split('\n') if line.strip() != '']
+        self.instructions = no_empty_rows
 
-    def
+    def instruction_separator(self):
+        seperated_instructions = []
+        for instruction in self.instructions:
+            seperated_instructions.append(instruction.split(' '))
+        self.instructions = seperated_instructions
+        print(self.instructions)
 
 
 if __name__ == '__main__':
-    Parser()
+    a = Parser()
+    a.main()
