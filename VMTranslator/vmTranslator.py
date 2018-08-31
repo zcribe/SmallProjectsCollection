@@ -44,7 +44,6 @@ class CodeWriter:
     def __init__(self):
         self.instructions = []
         self.instructions_assembly = []
-        self.memory = []
 
     def main(self):
         self.instructions = Parser().main()
@@ -53,10 +52,6 @@ class CodeWriter:
 
     def output(self):
         pass
-
-    def memory_manager(self, location):
-        memory_area = location[1]
-        memory_specific = int(location[2])
 
     def instruction_type_separator(self, instruction):
         arg1 = instruction[0]
@@ -68,11 +63,15 @@ class CodeWriter:
             self.logical_translator(instruction)
 
     def memory_translator(self, instruction):
-        if instruction[0] == 'pop':
-            loc = self.memory_manager(instruction)
+        arg1 = instruction[1]
+        arg2 = instruction[2]
+        if arg1 == 'pop':
             self.instructions_assembly.extend(None)
         else:
-            self.instructions_assembly.extend(None)
+            push = ['// push {} {}', '@{}', 'D=A', '@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+            push[0] = push[0].format(arg1, arg2)
+            push[1] = push[1].format(arg2)
+            self.instructions_assembly.extend(push)
 
     def arithmetic_translator(self, instruction):
         if instruction[0] == 'add':
