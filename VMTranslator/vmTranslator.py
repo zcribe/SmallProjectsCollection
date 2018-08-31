@@ -16,6 +16,7 @@ class Parser:
         self.input()
         self.whitespace_remover()
         self.instruction_separator()
+        return self.instructions
 
     def input(self):
         try:
@@ -37,7 +38,64 @@ class Parser:
         for instruction in self.instructions:
             seperated_instructions.append(instruction.split(' '))
         self.instructions = seperated_instructions
-        print(self.instructions)
+
+
+class CodeWriter:
+    def __init__(self):
+        self.instructions = []
+        self.instructions_assembly = []
+        self.memory = []
+
+    def main(self):
+        self.instructions = Parser().main()
+        for instruction in self.instructions:
+            self.instruction_type_separator(instruction)
+
+    def output(self):
+        pass
+
+    def memory_manager(self, location):
+        memory_area = location[1]
+        memory_specific = int(location[2])
+
+    def instruction_type_separator(self, instruction):
+        arg1 = instruction[0]
+        if arg1 == 'pop' or arg1 == 'push':
+            self.memory_translator(instruction)
+        elif arg1 == 'add' or arg1 == 'sub' or arg1 == 'neg':
+            self.arithmetic_translator(instruction)
+        elif arg1 == 'eq' or arg1 == 'gt' or arg1 == 'lt' or arg1 == 'and' or arg1 == 'or' or arg1 == 'not':
+            self.logical_translator(instruction)
+
+    def memory_translator(self, instruction):
+        if instruction[0] == 'pop':
+            loc = self.memory_manager(instruction)
+            self.instructions_assembly.extend(None)
+        else:
+            self.instructions_assembly.extend(None)
+
+    def arithmetic_translator(self, instruction):
+        if instruction[0] == 'add':
+            self.instructions_assembly.extend(None)
+        elif instruction[0] == 'sub':
+            self.instructions_assembly.extend(None)
+        else:
+            self.instructions_assembly.extend(None)
+
+    def logical_translator(self, instruction):
+        arg1 = instruction[0]
+        if arg1 == 'eq':
+            self.instructions_assembly.extend(None)
+        elif arg1 == 'gt':
+            self.instructions_assembly.extend(None)
+        elif arg1 == 'lt':
+            self.instructions_assembly.extend(None)
+        elif arg1 == 'and':
+            self.instructions_assembly.extend(None)
+        elif arg1 == 'or':
+            self.instructions_assembly.extend(None)
+        else:
+            self.instructions_assembly.extend(None)
 
 
 if __name__ == '__main__':
