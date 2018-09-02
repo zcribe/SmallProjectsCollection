@@ -8,6 +8,7 @@ import sys
 # add
 
 class Parser:
+    # Takes .vm file and parses it into instructions
     def __init__(self):
         self.filename = None
         self.document = None
@@ -22,8 +23,8 @@ class Parser:
 
     def input(self):
         try:
-            with open(sys.argv[1], 'r') as f:
-                self.document = f.read()
+            with open(sys.argv[1], 'r') as file:
+                self.document = file.read()
         except FileNotFoundError:
             raise Warning('{} was not found'.format(sys.argv[1]))
         except IndexError:
@@ -43,6 +44,7 @@ class Parser:
 
 
 class CodeWriter:
+    # Takes the seperate instructions, translates, outputs .asm file
     def __init__(self):
         self.parse_result = None
         self.filename = None
@@ -58,8 +60,8 @@ class CodeWriter:
         self.output()
 
     def output(self):
-        with open('{}.asm'.format(self.filename), 'w+') as f:
-            f.write('\n'.join(self.instructions_assembly))
+        with open('{}.asm'.format(self.filename), 'w+') as file:
+            file.write('\n'.join(self.instructions_assembly))
 
     def instruction_type_separator(self, instruction):
         arg1 = instruction[0]
@@ -127,6 +129,9 @@ class CodeWriter:
             self.instruction_translator(instruction=instruction, template=template, arg_count=3)
         else:
             Warning('Bad instruction -({})'.format(instruction))
+
+    def memory_segment_procedures(self, segment):
+        pass
 
 
 
