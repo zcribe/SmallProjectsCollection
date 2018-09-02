@@ -1,5 +1,6 @@
 import re
 import sys
+from itertools import chain
 
 
 # // Pushes and adds two constants.
@@ -50,6 +51,7 @@ class CodeWriter:
         self.filename = None
         self.instructions = []
         self.instructions_assembly = []
+        self.jump_count = 0
 
     def main(self):
         self.parse_result = Parser().main()
@@ -87,34 +89,96 @@ class CodeWriter:
 
     def arithmetic_translator(self, instruction):
         arg1 = instruction[0]
+
+        docstring_1 = ['// {}']
+        pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
+        decrement_sp = ['@SP', 'M=M-1']
+        increment_sp = ['@SP', 'M=M+1']
+        set_a_to_stack = ['@SP', 'A=M']
+
+        non_negative_template = list(chain(docstring_1,
+                                           pop_from_stack,
+                                           decrement_sp,
+                                           set_a_to_stack,
+                                           [],
+                                           increment_sp))
+
+        negative_template = list(chain(docstring_1,
+                                       decrement_sp,
+                                       set_a_to_stack,
+                                       [],
+                                       increment_sp))
+
         if arg1 == 'add':
-            template = ['// {}', 'M=M+D']
+            template = non_negative_template
+            template[-2] = 'M=M+D'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'sub':
-            template = ['// {}', 'M=M-D']
+            template = non_negative_template
+            template[-2] = 'M=M-D'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'and':
-            template = ['// {}', 'M=M&D']
+            template = non_negative_template
+            template[-2] = 'M=M&D'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'or':
-            template = ['// {}', 'M=M|D']
+            template = non_negative_template
+            template[-2] = 'M=M|D'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'not':
-            template = ['// {}', 'M=!M']
+            template = negative_template
+            template[-2] = 'M=!M'
+            self.instruction_translator(instruction=instruction, template=template)
+        elif arg1 == 'neg':
+            template = negative_template
+            template[-2] = 'M=-M'
             self.instruction_translator(instruction=instruction, template=template)
         else:
             Warning('Bad instruction -({})'.format(instruction))
 
     def logical_translator(self, instruction):
         arg1 = instruction[0]
+
+        docstring_3 = ['// {} {} {}']
+        pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
+        push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+        decrement_sp = ['@SP', 'M=M-1']
+        increment_sp = ['@SP', 'M=M+1']
+        set_a_to_stack = ['@SP', 'A=M']
+        label_start = ['@JUMP{}'.format(self.jump_count)]
+        label_end = ['@ENDJUMP{}'.format(self.jump_count)]
+        assign_start = ['(JUMP{})'.format(self.jump_count)]
+        assign_end = ['(ENDJUMP{})'.format(self.jump_count)]
+
+        common_template = list(chain(docstring_3,
+                                     pop_from_stack,
+                                     decrement_sp,
+                                     set_a_to_stack,
+                                     ['D=M-D'],
+                                     label_start,
+                                     [],
+                                     set_a_to_stack,
+                                     ['M=0'],
+                                     label_end,
+                                     ['0;JMP'],
+                                     assign_start,
+                                     set_a_to_stack,
+                                     ['M=-1'],
+                                     assign_end,
+                                     increment_sp))
+        self.jump_count += 1
+
         if arg1 == 'eq':
-            template = ['// {}', 'D=M-D', 'D;JEQ']
+            template = common_template
+            template[6] = 'D;JEQ'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'gt':
-            template = ['// {}', 'D=M-D', 'D;JGT']
+            template = common_template
+            template[6] = 'D;JGT'
             self.instruction_translator(instruction=instruction, template=template)
         elif arg1 == 'lt':
-            template = ['// {}', 'D=M-D', 'D;JLT']
+            template = common_template
+            template[6] = 'D;JLT'
             self.instruction_translator(instruction=instruction, template=template)
         else:
             Warning('Bad instruction -({})'.format(instruction))
