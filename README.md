@@ -1,10 +1,16 @@
 # SmallProjectsCollection
 A collection of small projects. Gifs for quick overview.
 
+
+* [VM-To-Hack Translator](https://github.com/zcribe/SmallProjectsCollection/tree/master/VMTranslator)
 * [Hack-To-Binary Assembler](https://github.com/zcribe/SmallProjectsCollection/tree/master/HackAssembler)
 * [Steam-GoG Mod converter](https://github.com/zcribe/SmallProjectsCollection/tree/master/ModConverter)
 * [Kivy Calculator](https://github.com/zcribe/SmallProjectsCollection/tree/master/Kalkulaator)
 
+
+## Stackmachine VM Code to Hack Assembly translator
+Created during the course of reading the book "The Elements of Computing Systems: Building a Modern Computer from First Principles"
+Creates commented Hack assembly code.
 
 ## Hack assembly language to binary assembler
 Created during the course of reading the book "The Elements of Computing Systems: Building a Modern Computer from First Principles"
