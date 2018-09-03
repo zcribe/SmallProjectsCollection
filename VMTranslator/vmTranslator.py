@@ -4,7 +4,7 @@ from itertools import chain
 
 
 class Parser:
-    '''# Takes .vm file and parses it into instructions.'''
+    ''' Takes .vm file and parses it into instructions. '''
     def __init__(self):
         self.filename = None
         self.document = None
@@ -58,6 +58,7 @@ class CodeWriter:
         for instruction in self.instructions:
             self.instruction_type_separator(instruction)
         self.output()
+        print('Finished successfully. Output file: "{}{}"'.format(self.filename, '.asm'))
 
     def instruction_type_separator(self, instruction):
         '''Filters instruction into arithmetic, logical, memory.'''
@@ -125,7 +126,7 @@ class CodeWriter:
         '''Builds logical instruction translation template.'''
         arg1 = instruction[0]
 
-        docstring_3 = ['// {} {} {}']
+        docstring_1 = ['// {}']
         pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
         decrement_sp = ['@SP', 'M=M-1']
         increment_sp = ['@SP', 'M=M+1']
@@ -135,7 +136,7 @@ class CodeWriter:
         assign_start = ['(JUMP{})'.format(self.jump_count)]
         assign_end = ['(ENDJUMP{})'.format(self.jump_count)]
 
-        common_template = list(chain(docstring_3,
+        common_template = list(chain(docstring_1,
                                      pop_from_stack,
                                      decrement_sp,
                                      set_a_to_stack,
