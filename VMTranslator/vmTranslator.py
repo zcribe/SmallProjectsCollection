@@ -59,11 +59,6 @@ class CodeWriter:
             self.instruction_type_separator(instruction)
         self.output()
 
-    def output(self):
-        '''Outputs assembly file with changed suffix.'''
-        with open('{}.asm'.format(self.filename), 'w+') as file:
-            file.write('\n'.join(self.instructions_assembly))
-
     def instruction_type_separator(self, instruction):
         '''Filters instruction into arithmetic, logical, memory.'''
         arg1 = instruction[0]
@@ -75,20 +70,6 @@ class CodeWriter:
             self.logical_translator(instruction)
         else:
             Warning('Unable to seperate instruction -({})'.format(instruction))
-
-    def instruction_translator(self, instruction, template, arg_count=1):
-        '''Takes the template provided and fits instructions into them.'''
-        symbols = template
-        if arg_count == 3:
-            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
-            symbols[1] = symbols[1].format(instruction[2])
-        elif arg_count == 2:
-            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
-        elif arg_count == 1:
-            symbols[0] = symbols[0].format(instruction[0])
-        else:
-            Warning('Wrong argument count -({})'.format(instruction))
-        self.instructions_assembly.extend(symbols)
 
     def arithmetic_translator(self, instruction):
         '''Builds arithmetic instruction translation template'''
@@ -190,10 +171,12 @@ class CodeWriter:
     def memory_translator(self, instruction):
         '''Builds memory instruction translation template.'''
         arg0, arg1, arg2 = instruction
+        memory_segment_procedures = self.memory_segment_procedures(arg1, arg2)
+
         docstring_3 = ['// {} {} {}']
         pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
         push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
-        memory_segment_procedures = self.memory_segment_procedures(arg1, arg2)
+
         if arg0 == 'pop':
             template = list(chain(docstring_3,
                                   memory_segment_procedures,
@@ -234,6 +217,25 @@ class CodeWriter:
             return ['@THAT', 'D=M', '@{}'.format(index), 'A=D+A']
         else:
             Warning('Bad segment -({})'.format(segment))
+
+    def instruction_translator(self, instruction, template, arg_count=1):
+        '''Takes the template provided and fits instructions into them.'''
+        symbols = template
+        if arg_count == 3:
+            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
+            symbols[1] = symbols[1].format(instruction[2])
+        elif arg_count == 2:
+            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
+        elif arg_count == 1:
+            symbols[0] = symbols[0].format(instruction[0])
+        else:
+            Warning('Wrong argument count -({})'.format(instruction))
+        self.instructions_assembly.extend(symbols)
+
+    def output(self):
+        '''Outputs assembly file with changed suffix.'''
+        with open('{}.asm'.format(self.filename), 'w+') as file:
+            file.write('\n'.join(self.instructions_assembly))
 
 
 if __name__ == '__main__':
