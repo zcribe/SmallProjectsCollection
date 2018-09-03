@@ -3,13 +3,8 @@ import sys
 from itertools import chain
 
 
-# // Pushes and adds two constants.
-# push constant 7
-# push constant 8
-# add
-
 class Parser:
-    # Takes .vm file and parses it into instructions
+    '''# Takes .vm file and parses it into instructions.'''
     def __init__(self):
         self.filename = None
         self.document = None
@@ -23,6 +18,7 @@ class Parser:
         return self.instructions, self.filename
 
     def input(self):
+        '''Takes in .vm file.'''
         try:
             with open(sys.argv[1], 'r') as file:
                 self.document = file.read()
@@ -32,12 +28,14 @@ class Parser:
             raise Warning('File argument not supplied. Usage: vmTranslator FILENAME')
 
     def whitespace_remover(self):
+        '''De-comments and removes whitespace from input.'''
         document = self.document
         uncommented = re.sub(r'(//[\S ]*)', '', document)
         no_empty_rows = [line for line in uncommented.split('\n') if line.strip() != '']
         self.instructions = no_empty_rows
 
     def instruction_separator(self):
+        '''Break instruction into segments'''
         seperated_instructions = []
         for instruction in self.instructions:
             seperated_instructions.append(instruction.split(' '))
@@ -45,7 +43,7 @@ class Parser:
 
 
 class CodeWriter:
-    # Takes the seperate instructions, translates, outputs .asm file
+    '''Takes the seperate instructions, translates, outputs .asm file.'''
     def __init__(self):
         self.parse_result = None
         self.filename = None
@@ -62,10 +60,12 @@ class CodeWriter:
         self.output()
 
     def output(self):
+        '''Outputs assembly file with changed suffix.'''
         with open('{}.asm'.format(self.filename), 'w+') as file:
             file.write('\n'.join(self.instructions_assembly))
 
     def instruction_type_separator(self, instruction):
+        '''Filters instruction into arithmetic, logical, memory.'''
         arg1 = instruction[0]
         if arg1 == 'pop' or arg1 == 'push':
             self.memory_translator(instruction)
@@ -77,6 +77,7 @@ class CodeWriter:
             Warning('Unable to seperate instruction -({})'.format(instruction))
 
     def instruction_translator(self, instruction, template, arg_count=1):
+        '''Takes the template provided and fits instructions into them.'''
         symbols = template
         if arg_count == 3:
             symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
@@ -90,6 +91,7 @@ class CodeWriter:
         self.instructions_assembly.extend(symbols)
 
     def arithmetic_translator(self, instruction):
+        '''Builds arithmetic instruction translation template'''
         arg1 = instruction[0]
 
         docstring_1 = ['// {}']
@@ -139,6 +141,7 @@ class CodeWriter:
             Warning('Bad instruction -({})'.format(instruction))
 
     def logical_translator(self, instruction):
+        '''Builds logical instruction translation template.'''
         arg1 = instruction[0]
 
         docstring_3 = ['// {} {} {}']
@@ -185,6 +188,7 @@ class CodeWriter:
             Warning('Bad instruction -({})'.format(instruction))
 
     def memory_translator(self, instruction):
+        '''Builds memory instruction translation template.'''
         arg0, arg1, arg2 = instruction
         docstring_3 = ['// {} {} {}']
         pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
@@ -211,6 +215,7 @@ class CodeWriter:
             Warning('Bad instruction -({})'.format(instruction))
 
     def memory_segment_procedures(self, segment, index):
+        '''Adjusts template according to memory segment being operated on.'''
         if segment == 'constant':
             return ['@{}'.format(index)]
         elif segment == 'static':
@@ -231,7 +236,6 @@ class CodeWriter:
             Warning('Bad segment -({})'.format(segment))
 
 
-
 if __name__ == '__main__':
-    a = CodeWriter()
-    a.main()
+    initialised = CodeWriter()
+    initialised.main()
