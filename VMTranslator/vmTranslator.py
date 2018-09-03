@@ -81,6 +81,8 @@ class CodeWriter:
         if arg_count == 3:
             symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
             symbols[1] = symbols[1].format(instruction[2])
+        elif arg_count == 2:
+            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
         elif arg_count == 1:
             symbols[0] = symbols[0].format(instruction[0])
         else:
@@ -141,7 +143,6 @@ class CodeWriter:
 
         docstring_3 = ['// {} {} {}']
         pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
-        push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
         decrement_sp = ['@SP', 'M=M-1']
         increment_sp = ['@SP', 'M=M+1']
         set_a_to_stack = ['@SP', 'A=M']
@@ -184,18 +185,50 @@ class CodeWriter:
             Warning('Bad instruction -({})'.format(instruction))
 
     def memory_translator(self, instruction):
-        if instruction[0] == 'pop':
-            template = ['// {} {} {}', '@SP', 'D=M', ]
-            self.instruction_translator(instruction=instruction, template=template, arg_count=3)
-        elif instruction[0] == 'push':
-            # Push
-            template = ['// {} {} {}', '@{}', 'D=A', '@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
-            self.instruction_translator(instruction=instruction, template=template, arg_count=3)
+        arg0, arg1, arg2 = instruction
+        docstring_3 = ['// {} {} {}']
+        pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
+        push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+        memory_segment_procedures = self.memory_segment_procedures(arg1, arg2)
+        if arg0 == 'pop':
+            template = list(chain(docstring_3,
+                                  memory_segment_procedures,
+                                  ['D=A', '@R13', 'M=D'],
+                                  pop_from_stack,
+                                  ['@R13', 'A=M', 'M=D']))
+            self.instruction_translator(instruction=instruction, template=template, arg_count=2)
+        elif arg0 == 'push':
+            if arg1 == 'constant':
+                load_from = ['D=A']
+            else:
+                load_from = ['D=M']
+            template = list(chain(docstring_3,
+                                  memory_segment_procedures,
+                                  load_from,
+                                  push_to_stack))
+            self.instruction_translator(instruction=instruction, template=template, arg_count=2)
         else:
             Warning('Bad instruction -({})'.format(instruction))
 
-    def memory_segment_procedures(self, segment):
-        pass
+    def memory_segment_procedures(self, segment, index):
+        if segment == 'constant':
+            return ['@{}'.format(index)]
+        elif segment == 'static':
+            return ['@{}.{}'.format(self.filename, index)]
+        elif segment == 'pointer':
+            return ['@R{}'.format((3 + int(index)))]
+        elif segment == 'temp':
+            return ['@R{}'.format((5 + int(index)))]
+        elif segment == 'local':
+            return ['@LCL', 'D=M', '@{}'.format(index), 'A=D+A']
+        elif segment == 'argument':
+            return ['@ARG', 'D=M', '@{}'.format(index), 'A=D+A']
+        elif segment == 'this':
+            return ['@THIS', 'D=M', '@{}'.format(index), 'A=D+A']
+        elif segment == 'that':
+            return ['@THAT', 'D=M', '@{}'.format(index), 'A=D+A']
+        else:
+            Warning('Bad segment -({})'.format(segment))
 
 
 
