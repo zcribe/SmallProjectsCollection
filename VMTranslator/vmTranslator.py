@@ -256,27 +256,25 @@ class CodeWriter:
         # call Main.fibonacci 1
         # return
 
-        arg1, arg2, arg3 = instruction
-        pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
         decrement_sp = ['@SP', 'M=M-1']
-        increment_sp = ['@SP', 'M=M+1']
-        set_a_to_stack = ['@SP', 'A=M']
         push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
-        
-        if arg1 == 'function':
-            push_empty_var = ['D=0'].extend(push_to_stack)
-            local_vars = list(chain([push_empty_var for _ in range(arg3)]))
-            template = ['// {} {} {}', '({})'].extend(local_vars)
+
+        if instruction[0] == 'function':
+            push_empty_var = ['D=0', '@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+            template = ['// {} {} {}', '({})']
+
+            for _ in range(int(instruction[2])):
+                template += push_empty_var
 
             self.instruction_translator(instruction=instruction, template=template, instruction_type='function')
-        elif arg1 == 'call':
+        elif instruction[0] == 'call':
             ret = '@{}%ret.{}'.format(self.filename, self.call_count)
             self.call_count += 1
 
             push_state = [[i, 'D=M'].extend(push_to_stack) for i in ['@LCL', '@ARG', '@THIS', '@THAT']]
 
-            setup_steps = str(5 + int(arg3))
-            function_address = '@{}'.format(arg2)
+            setup_steps = str(5 + int(instruction[2]))
+            function_address = '@{}'.format(instruction[1])
             return_address = '({})'.format(ret[1:])
 
             template = list(chain(['// {} {} {}', ret, 'D=A'],
@@ -289,17 +287,27 @@ class CodeWriter:
                                    return_address]))
 
             self.instruction_translator(instruction=instruction, template=template, instruction_type='call')
-        elif arg1 == 'return':
-            frame = 'R13'
-            ret = 'R14'
+        elif instruction[0] == 'return':
+            frame = '@R13'
+            ret = '@R14'
+            push_state = []
 
-            template = list(chain(['@LCL', 'D=M', '@R13', 'M=D',
-                                   '@R13', 'D=M', '@5', 'D=D-A',
-                                   'A=D', 'D=M', '@R14', 'M=D'],
+            counter = 1
+            for i in ['@THAT', '@THIS', '@ARG', '@LCL']:
+                push_state.extend([frame, 'D=M', '@{}'.format(counter), 'D=D-A', 'A=D', 'D=M', i, 'M=D'])
+                counter += 1
+
+            template = list(chain(['// {}', '@LCL', 'D=M', frame, 'M=D',
+                                   frame, 'D=M', '@5', 'D=D-A',
+                                   'A=D', 'D=M', ret, 'M=D'],
                                   decrement_sp,
                                   ['A=M', 'D=M'],
                                   ['@ARG', 'A=M', 'M=D', '@ARG',
-                                   'D=M', '@SP', 'M=D+1']))
+                                   'D=M', '@SP', 'M=D+1'],
+                                  push_state,
+                                  [ret, 'A=M', '0;JMP']))
+
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='return')
 
         else:
             Warning('Bad instruction -({})'.format(instruction))
@@ -307,21 +315,20 @@ class CodeWriter:
     def instruction_translator(self, instruction, template, instruction_type='arithm/logic'):
         '''Takes the template provided and fits instructions into them.'''
         symbols = template
-        arg1, arg2, arg3 = instruction
 
-        if instruction_type == 'x':
-            symbols[0] = symbols[0].format(arg1, arg2, arg3)
-            symbols[1] = symbols[1].format(arg3)
-        elif instruction_type == 'memory':
-            symbols[0] = symbols[0].format(arg1, arg2, arg3)
-        elif instruction_type == 'arithm/logic':
-            symbols[0] = symbols[0].format(arg1)
-        elif instruction_type == 'branching':
-            symbols[0] = symbols[0].format(arg1)
-            symbols[1] = symbols[1].format(self.filename, arg2)
-        elif instruction_type == 'branching_if':
+        if instruction_type == 'memory' or instruction_type == 'call':
+            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
+        elif instruction_type == 'arithm/logic' or instruction_type == 'return':
             symbols[0] = symbols[0].format(instruction[0])
-            symbols[-2] = symbols[-2].format(self.filename, arg2)
+        elif instruction_type == 'branching':
+            symbols[0] = symbols[0].format(instruction[0])
+            symbols[1] = symbols[1].format(self.filename, instruction[1])
+        elif instruction_type == 'branching_if':
+            symbols[0] = symbols[0].format(arg1)
+            symbols[-2] = symbols[-2].format(self.filename, instruction[1])
+        elif instruction_type == 'function':
+            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
+            symbols[1] = symbols[1].format(instruction[1])
         else:
             Warning('Wrong argument count -({})'.format(instruction))
         self.instructions_assembly.extend(symbols)
