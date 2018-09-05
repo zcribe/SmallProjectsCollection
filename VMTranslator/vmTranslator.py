@@ -52,16 +52,26 @@ class CodeWriter:
         self.jump_count = 0
 
     def main(self):
+        self._boot()
         self.parse_result = Parser().main()
         self.instructions = self.parse_result[0]
         self.filename = self.parse_result[1]
         for instruction in self.instructions:
             self.instruction_type_separator(instruction)
+        self._terminate()
         self.output()
         print('Finished successfully. Output file: "{}{}"'.format(self.filename, '.asm'))
 
+    def _boot(self):
+        ''' Adds initialisation code for VM. '''
+        self.instructions_assembly.extend(['@256', 'D=A', '@SP', 'M=D'])
+
+    def _terminate(self):
+        ''' Adds termination loop to avoid accessing unintended memory. '''
+        self.instructions_assembly.extend(['(INFLOOP)', '@INFLOOP', '0;JMP'])
+
     def instruction_type_separator(self, instruction):
-        '''Filters instruction into arithmetic, logical, memory.'''
+        '''Filters instruction into arithmetic, logical, memory, branching and functional.'''
         arg1 = instruction[0]
         if arg1 == 'pop' or arg1 == 'push':
             self.memory_translator(instruction)
@@ -69,6 +79,10 @@ class CodeWriter:
             self.arithmetic_translator(instruction)
         elif arg1 == 'eq' or arg1 == 'gt' or arg1 == 'lt':
             self.logical_translator(instruction)
+        elif arg1 == 'label' or arg1 == 'goto' or arg1 == 'if-goto':
+            self.branching_translator(instruction)
+        elif arg1 == 'function' or arg1 == 'return' or arg1 == 'call':
+            self.function_translator(instruction)
         else:
             Warning('Unable to seperate instruction -({})'.format(instruction))
 
@@ -184,7 +198,7 @@ class CodeWriter:
                                   ['D=A', '@R13', 'M=D'],
                                   pop_from_stack,
                                   ['@R13', 'A=M', 'M=D']))
-            self.instruction_translator(instruction=instruction, template=template, arg_count=2)
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='memory')
         elif arg0 == 'push':
             if arg1 == 'constant':
                 load_from = ['D=A']
@@ -194,7 +208,7 @@ class CodeWriter:
                                   memory_segment_procedures,
                                   load_from,
                                   push_to_stack))
-            self.instruction_translator(instruction=instruction, template=template, arg_count=2)
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='memory')
         else:
             Warning('Bad instruction -({})'.format(instruction))
 
@@ -219,15 +233,23 @@ class CodeWriter:
         else:
             Warning('Bad segment -({})'.format(segment))
 
-    def instruction_translator(self, instruction, template, arg_count=1):
+    def branching_translator(self, instruction):
+        label = ['// {} {}', '({})']
+        goto = ['// {} {}', '@{}', '0;JMP']
+        if_goto = ['// {} {}', '@SP', 'AM=M-1', 'D=M', 'M=0', '@{}', 'D;JNE']
+
+    def function_translator(self, instruction):
+        pass
+
+    def instruction_translator(self, instruction, template, instruction_type='arithm/logic'):
         '''Takes the template provided and fits instructions into them.'''
         symbols = template
-        if arg_count == 3:
+        if instruction_type == 'x':
             symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
             symbols[1] = symbols[1].format(instruction[2])
-        elif arg_count == 2:
+        elif instruction_type == 'memory':
             symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
-        elif arg_count == 1:
+        elif instruction_type == 'arithm/logic':
             symbols[0] = symbols[0].format(instruction[0])
         else:
             Warning('Wrong argument count -({})'.format(instruction))
