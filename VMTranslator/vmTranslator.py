@@ -236,7 +236,7 @@ class CodeWriter:
 
     def branching_translator(self, instruction):
         ''' Builds branching instruction template. '''
-        arg1, arg2, arg3 = instruction
+        arg1 = instruction[0]
 
         if arg1 == 'label':
             template = ['// {} {}', '({}${})']
@@ -252,9 +252,6 @@ class CodeWriter:
 
     def function_translator(self, instruction):
         ''' Builds function instruction template. '''
-        # function SimpleFunction.test 2
-        # call Main.fibonacci 1
-        # return
 
         decrement_sp = ['@SP', 'M=M-1']
         push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
@@ -324,7 +321,7 @@ class CodeWriter:
             symbols[0] = symbols[0].format(instruction[0])
             symbols[1] = symbols[1].format(self.filename, instruction[1])
         elif instruction_type == 'branching_if':
-            symbols[0] = symbols[0].format(arg1)
+            symbols[0] = symbols[0].format(instruction[0])
             symbols[-2] = symbols[-2].format(self.filename, instruction[1])
         elif instruction_type == 'function':
             symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
