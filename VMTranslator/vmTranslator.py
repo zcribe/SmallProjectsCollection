@@ -52,7 +52,7 @@ class CodeWriter:
         self.jump_count = 0
 
     def main(self):
-        self._boot()
+        self._bootstrap()
         self.parse_result = Parser().main()
         self.instructions = self.parse_result[0]
         self.filename = self.parse_result[1]
@@ -62,7 +62,7 @@ class CodeWriter:
         self.output()
         print('Finished successfully. Output file: "{}{}"'.format(self.filename, '.asm'))
 
-    def _boot(self):
+    def _bootstrap(self):
         ''' Adds initialisation code for VM. '''
         self.instructions_assembly.extend(['@256', 'D=A', '@SP', 'M=D'])
 
@@ -234,23 +234,64 @@ class CodeWriter:
             Warning('Bad segment -({})'.format(segment))
 
     def branching_translator(self, instruction):
-        label = ['// {} {}', '({})']
-        goto = ['// {} {}', '@{}', '0;JMP']
-        if_goto = ['// {} {}', '@SP', 'AM=M-1', 'D=M', 'M=0', '@{}', 'D;JNE']
+        ''' Builds branching instruction template. '''
+        arg1, arg2, arg3 = instruction
+        
+        if arg1 == 'label':
+            template = ['// {} {}', '({}${})']
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='branching')
+        elif arg1 == 'goto':
+            template = ['// {} {}', '@{}${}', '0;JMP']
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='branching')
+        elif arg1 == 'if_goto':
+            template = ['// {} {}', '@SP', 'AM=M-1', 'D=M', 'M=0', '@{}${}', 'D;JNE']
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='branching_if')
+        else:
+            Warning('Bad instruction -({})'.format(instruction))
 
     def function_translator(self, instruction):
-        pass
+        ''' Builds function instruction template. '''
+        # function SimpleFunction.test 2
+        # call Main.fibonacci 1
+        # return
+
+        arg1, arg2, arg3 = instruction
+        pop_from_stack = ['@SP', 'M=M-1', 'A=M', 'D=M']
+        decrement_sp = ['@SP', 'M=M-1']
+        increment_sp = ['@SP', 'M=M+1']
+        set_a_to_stack = ['@SP', 'A=M']
+        push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
+        push_empty_var = ['D=0'].extend(push_to_stack)
+
+        if arg1 == 'function':
+            local_vars = list(chain([push_empty_var for _ in range(arg3)]))
+            template = ['// {} {} {}', '({})'].extend(local_vars)
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='function')
+        elif arg1 == 'call':
+            pass
+        elif arg1 == 'return':
+            pass
+        else:
+            Warning('Bad instruction -({})'.format(instruction))
 
     def instruction_translator(self, instruction, template, instruction_type='arithm/logic'):
         '''Takes the template provided and fits instructions into them.'''
         symbols = template
+        arg1, arg2, arg3 = instruction
+
         if instruction_type == 'x':
-            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
-            symbols[1] = symbols[1].format(instruction[2])
+            symbols[0] = symbols[0].format(arg1, arg2, arg3)
+            symbols[1] = symbols[1].format(arg3)
         elif instruction_type == 'memory':
-            symbols[0] = symbols[0].format(instruction[0], instruction[1], instruction[2])
+            symbols[0] = symbols[0].format(arg1, arg2, arg3)
         elif instruction_type == 'arithm/logic':
+            symbols[0] = symbols[0].format(arg1)
+        elif instruction_type == 'branching':
+            symbols[0] = symbols[0].format(arg1)
+            symbols[1] = symbols[1].format(self.filename, arg2)
+        elif instruction_type == 'branching_if':
             symbols[0] = symbols[0].format(instruction[0])
+            symbols[-2] = symbols[-2].format(self.filename, arg2)
         else:
             Warning('Wrong argument count -({})'.format(instruction))
         self.instructions_assembly.extend(symbols)
