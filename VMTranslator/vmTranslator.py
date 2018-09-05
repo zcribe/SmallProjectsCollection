@@ -50,6 +50,7 @@ class CodeWriter:
         self.instructions = []
         self.instructions_assembly = []
         self.jump_count = 0
+        self.call_count = 0
 
     def main(self):
         self._bootstrap()
@@ -236,7 +237,7 @@ class CodeWriter:
     def branching_translator(self, instruction):
         ''' Builds branching instruction template. '''
         arg1, arg2, arg3 = instruction
-        
+
         if arg1 == 'label':
             template = ['// {} {}', '({}${})']
             self.instruction_translator(instruction=instruction, template=template, instruction_type='branching')
@@ -261,16 +262,45 @@ class CodeWriter:
         increment_sp = ['@SP', 'M=M+1']
         set_a_to_stack = ['@SP', 'A=M']
         push_to_stack = ['@SP', 'A=M', 'M=D', '@SP', 'M=M+1']
-        push_empty_var = ['D=0'].extend(push_to_stack)
-
+        
         if arg1 == 'function':
+            push_empty_var = ['D=0'].extend(push_to_stack)
             local_vars = list(chain([push_empty_var for _ in range(arg3)]))
             template = ['// {} {} {}', '({})'].extend(local_vars)
+
             self.instruction_translator(instruction=instruction, template=template, instruction_type='function')
         elif arg1 == 'call':
-            pass
+            ret = '@{}%ret.{}'.format(self.filename, self.call_count)
+            self.call_count += 1
+
+            push_state = [[i, 'D=M'].extend(push_to_stack) for i in ['@LCL', '@ARG', '@THIS', '@THAT']]
+
+            setup_steps = str(5 + int(arg3))
+            function_address = '@{}'.format(arg2)
+            return_address = '({})'.format(ret[1:])
+
+            template = list(chain(['// {} {} {}', ret, 'D=A'],
+                                  push_to_stack,
+                                  push_state,
+                                  ['@SP', '@D=M', '@LCL',
+                                   'M=D', setup_steps,
+                                   'D=D-A', '@ARG', 'M=D',
+                                   function_address, '0;JMP',
+                                   return_address]))
+
+            self.instruction_translator(instruction=instruction, template=template, instruction_type='call')
         elif arg1 == 'return':
-            pass
+            frame = 'R13'
+            ret = 'R14'
+
+            template = list(chain(['@LCL', 'D=M', '@R13', 'M=D',
+                                   '@R13', 'D=M', '@5', 'D=D-A',
+                                   'A=D', 'D=M', '@R14', 'M=D'],
+                                  decrement_sp,
+                                  ['A=M', 'D=M'],
+                                  ['@ARG', 'A=M', 'M=D', '@ARG',
+                                   'D=M', '@SP', 'M=D+1']))
+
         else:
             Warning('Bad instruction -({})'.format(instruction))
 
