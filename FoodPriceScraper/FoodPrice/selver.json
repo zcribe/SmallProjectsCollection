@@ -1,0 +1,3500 @@
+[
+  {
+    "name": "Taimne maitseaine p\u00fcreesuppidele, MEIRA, 25 g",
+    "price": "1.19",
+    "price/unit": "47,60 \u20ac/kg",
+    "barcode": "6420101882840"
+  },
+  {
+    "name": "Kendermanns Riesling 18,7 cl",
+    "price": "2.49",
+    "price/unit": "13,32 \u20ac/l",
+    "barcode": "4069600015063"
+  },
+  {
+    "name": "Taimne maitseaine ahjujuurviljadele, MEIRA, 25 g",
+    "price": "1.19",
+    "price/unit": "47,60 \u20ac/kg",
+    "barcode": "6420101882826"
+  },
+  {
+    "name": "Uudistooted",
+    "price": null,
+    "price/unit": "35,87 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kummikommid Kummikarud, BIONA, 75 g",
+    "price": "2.69",
+    "price/unit": "35,87 \u20ac/kg",
+    "barcode": "5032722307735"
+  },
+  {
+    "name": "Kiisueine loomaliha ja kanaga, FELIX, 4x100 g",
+    "price": "1.75",
+    "price/unit": "4,38 \u20ac/kg",
+    "barcode": "7613034442413"
+  },
+  {
+    "name": "Kiisueine l\u00f5he ja lestaga tarrendis, FELIX, 4x100 g",
+    "price": "1.75",
+    "price/unit": "4,38 \u20ac/kg",
+    "barcode": "7613034442437"
+  },
+  {
+    "name": "J\u00e4\u00e4tis mandli, MAGNUM, 86 g",
+    "price": "1.29",
+    "price/unit": "15,00 \u20ac/kg",
+    "barcode": "40561073"
+  },
+  {
+    "name": "Lemmikloomakaubad",
+    "price": null,
+    "price/unit": "4,90 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Vanillij\u00e4\u00e4tis piima\u0161okolaadis mandlitega, PREMIA, 95 g",
+    "price": "1.19",
+    "price/unit": "12,53 \u20ac/kg",
+    "barcode": "4740093801738"
+  },
+  {
+    "name": "Koolij\u00e4\u00e4tis, PREMIA, 60 g",
+    "price": "0.75",
+    "price/unit": "12,50 \u20ac/kg",
+    "barcode": "4740093003422"
+  },
+  {
+    "name": "Hele \u00f5lu Karl Friedrich 6-pakk 6x568 ml purk",
+    "price": "8.99",
+    "price/unit": "2,64 \u20ac/l",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Mineraalvesi karboniseeritud, BORJOMI, 1 L",
+    "price": "1.69",
+    "price/unit": "1,69 \u20ac/l",
+    "barcode": "GG&MW CO.N.V."
+  },
+  {
+    "name": "\u0160okolaadij\u00e4\u00e4tis glasuuris, V\u00c4IKE TOM, 60 g",
+    "price": "0.69",
+    "price/unit": "11,50 \u20ac/kg",
+    "barcode": "4740093000223"
+  },
+  {
+    "name": "Naturaalne vesi, SAAREMAA, 500 ml",
+    "price": "0.39",
+    "price/unit": "0,78 \u20ac/l",
+    "barcode": "SAAREMAA VESI O\u00dc"
+  },
+  {
+    "name": "Kastmed, \u00f5lid",
+    "price": null,
+    "price/unit": "3,86 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Saib 100% rukkijahust, LEIBUR, 370 g",
+    "price": "0.89",
+    "price/unit": "2,41 \u20ac/kg",
+    "barcode": "4740072123653"
+  },
+  {
+    "name": "R\u00f6stsai t\u00e4istera, EESTI PAGAR, 430 g",
+    "price": "0.99",
+    "price/unit": "2,30 \u20ac/kg",
+    "barcode": "0,65 \u20ac"
+  },
+  {
+    "name": "Juustud",
+    "price": null,
+    "price/unit": "10,20 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Perenaise sai viilutatud, EESTI PAGAR, 500 g",
+    "price": "0.65",
+    "price/unit": "1,30 \u20ac/kg",
+    "barcode": "4740086008526"
+  },
+  {
+    "name": "Kuldne klassikaline r\u00f6stsai, LEIBUR, 300 g",
+    "price": "0.79",
+    "price/unit": "2,63 \u20ac/kg",
+    "barcode": "4740072252353"
+  },
+  {
+    "name": "Rehe koorikleib, EESTI PAGAR, 200 g",
+    "price": "0.59",
+    "price/unit": "2,95 \u20ac/kg",
+    "barcode": "4740086014367"
+  },
+  {
+    "name": "Must Jassi seemneleib 1/2 viilutatud, EESTI PAGAR, 310 g",
+    "price": "0.89",
+    "price/unit": "2,87 \u20ac/kg",
+    "barcode": "4740086009578"
+  },
+  {
+    "name": "Mitmeviljar\u00f6stikukkel, FAZER, 260 g",
+    "price": "0.89",
+    "price/unit": "3,42 \u20ac/kg",
+    "barcode": "4740103063408"
+  },
+  {
+    "name": "Must leib viilutatud, EESTI PAGAR, 600 g",
+    "price": "0.69",
+    "price/unit": "1,15 \u20ac/kg",
+    "barcode": "4740086005068"
+  },
+  {
+    "name": "Perenaise sai viilutatud, EESTI PAGAR, 320 g",
+    "price": "0.45",
+    "price/unit": "1,41 \u20ac/kg",
+    "barcode": "4740086000728"
+  },
+  {
+    "name": "Rukkitasku, EESTI PAGAR, 340 g",
+    "price": "0.59",
+    "price/unit": "1,74 \u20ac/kg",
+    "barcode": "4740086009820"
+  },
+  {
+    "name": "Finest Keefirisai kaltsiumiga, FAZER, 350 g",
+    "price": "0.89",
+    "price/unit": "2,54 \u20ac/kg",
+    "barcode": "4740103011058"
+  },
+  {
+    "name": "Must leib viilutatud, FAZER, 600 g",
+    "price": "0.75",
+    "price/unit": "1,25 \u20ac/kg",
+    "barcode": "4740103020203"
+  },
+  {
+    "name": "Peedi-porgandi-pastinaagi-pihlaka pehmik, EESTI PAGAR, 240 g",
+    "price": "0.99",
+    "price/unit": "4,13 \u20ac/kg",
+    "barcode": "4740086015678"
+  },
+  {
+    "name": "Kuldne klassikaline r\u00f6stsai, LEIBUR, 500 g",
+    "price": "0.95",
+    "price/unit": "1,90 \u20ac/kg",
+    "barcode": "4740072251554"
+  },
+  {
+    "name": "Must seemneleib, FAZER, 280 g",
+    "price": "0.79",
+    "price/unit": "2,82 \u20ac/kg",
+    "barcode": "4740103020609"
+  },
+  {
+    "name": "Kodusai viilutatud, FAZER, 320 g",
+    "price": "0.59",
+    "price/unit": "1,84 \u20ac/kg",
+    "barcode": "4740103010914"
+  },
+  {
+    "name": "Juustumuhkel, FAZER, 200 g",
+    "price": "0.89",
+    "price/unit": "4,45 \u20ac/kg",
+    "barcode": "4740103064412"
+  },
+  {
+    "name": "\u00d5nne sepik viilutatud, EESTI PAGAR, 300 g",
+    "price": "0.69",
+    "price/unit": "2,30 \u20ac/kg",
+    "barcode": "4740086000094"
+  },
+  {
+    "name": "Must p\u00f5randaleib, FAZER, 390 g",
+    "price": "0.89",
+    "price/unit": "2,28 \u20ac/kg",
+    "barcode": "4740103020760"
+  },
+  {
+    "name": "Rukkisepik viilutatud, EESTI PAGAR, 300 g",
+    "price": "0.69",
+    "price/unit": "2,30 \u20ac/kg",
+    "barcode": "4740086009981"
+  },
+  {
+    "name": "Rukkileib Ruks, LEIBUR, 380 g",
+    "price": "0.75",
+    "price/unit": "1,97 \u20ac/kg",
+    "barcode": "4740072114859"
+  },
+  {
+    "name": "Suur Kodusai, FAZER, 500 g",
+    "price": "0.75",
+    "price/unit": "1,50 \u20ac/kg",
+    "barcode": "0,59 \u20ac"
+  },
+  {
+    "name": "R\u00f6stsai mitmevilja, LEIBUR, 470 g",
+    "price": "0.99",
+    "price/unit": "2,11 \u20ac/kg",
+    "barcode": "4740072252858"
+  },
+  {
+    "name": "Rukkipala, LEIBUR, 330 g",
+    "price": "0.89",
+    "price/unit": "2,70 \u20ac/kg",
+    "barcode": "4740072130514"
+  },
+  {
+    "name": "Leivad, saiad, kondiitritooted",
+    "price": null,
+    "price/unit": "5,40 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Leivad, saiad, kondiitritooted",
+    "price": null,
+    "price/unit": "21,38 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Leivad, saiad, kondiitritooted",
+    "price": null,
+    "price/unit": "1,15 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Glasuurkohuke juustukoogimaitseline, TERE, 43 g",
+    "price": "0.39",
+    "price/unit": "9,07 \u20ac/kg",
+    "barcode": "4740213856150"
+  },
+  {
+    "name": "Suured munad L10, EGGO, 10 tk",
+    "price": "1.59",
+    "price/unit": "0,16 \u20ac/tk",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Kodujuust 5%, ALMA, 380 g",
+    "price": "1.39",
+    "price/unit": "3,66 \u20ac/kg",
+    "barcode": "1,19 \u20ac"
+  },
+  {
+    "name": "Kohupiima juustuke \u0161okolaadi, KARUMS, 45 g",
+    "price": "0.39",
+    "price/unit": "8,67 \u20ac/kg",
+    "barcode": "4750050341511"
+  },
+  {
+    "name": "Piim 2,5%, TERE, 1 l",
+    "price": "0.79",
+    "price/unit": "0,79 \u20ac/l",
+    "barcode": "4740036000013"
+  },
+  {
+    "name": "Kohvikoor 10%, ALMA, 380 ml",
+    "price": "0.65",
+    "price/unit": "1,71 \u20ac/l",
+    "barcode": "4740125220117"
+  },
+  {
+    "name": "Eesti taluv\u00f5i 82%, ESTOVER, 150 g",
+    "price": "1.75",
+    "price/unit": "11,67 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Keefir 2,5%, VALIO GEFILUS, 1 kg",
+    "price": "0.95",
+    "price/unit": "0,95 \u20ac/kg",
+    "barcode": "4740125009637"
+  },
+  {
+    "name": "Glasuurkohuke Classic mustika, TERE, 43 g",
+    "price": "0.39",
+    "price/unit": "9,07 \u20ac/kg",
+    "barcode": "47410053"
+  },
+  {
+    "name": "Piim 2,5% pure, ALMA, 1 l",
+    "price": "0.75",
+    "price/unit": "0,75 \u20ac/l",
+    "barcode": "4740125000108"
+  },
+  {
+    "name": "Hapukoor 20% kiles, ALMA, 250 g",
+    "price": "0.69",
+    "price/unit": "2,76 \u20ac/kg",
+    "barcode": "4740125013252"
+  },
+  {
+    "name": "T\u00e4ispiim 3,8%-4,2%, FARMI, 2 l",
+    "price": "1.69",
+    "price/unit": "0,85 \u20ac/l",
+    "barcode": "1,49 \u20ac"
+  },
+  {
+    "name": "Kohupiima juustuke vanilla, KARUMS, 45 g",
+    "price": "0.39",
+    "price/unit": "8,67 \u20ac/kg",
+    "barcode": "4750050341405"
+  },
+  {
+    "name": "V\u00f5i 82%, SAAREMAA, 200 g",
+    "price": "1.95",
+    "price/unit": "9,75 \u20ac/kg",
+    "barcode": "4740153010001"
+  },
+  {
+    "name": "Kohvikoor 10%, TERE, 380 ml",
+    "price": "0.69",
+    "price/unit": "1,82 \u20ac/l",
+    "barcode": "4740036005094"
+  },
+  {
+    "name": "V\u00f5i 82%, TERE, 200 g",
+    "price": "1.99",
+    "price/unit": "9,95 \u20ac/kg",
+    "barcode": "4740036005551"
+  },
+  {
+    "name": "T\u00e4ispiim pure, FARMI, 1 l",
+    "price": "0.95",
+    "price/unit": "0,95 \u20ac/l",
+    "barcode": "4740113090555"
+  },
+  {
+    "name": "Kohvikoor 10%, TERE, 200 ml",
+    "price": "0.29",
+    "price/unit": "1,45 \u20ac/l",
+    "barcode": "4740036000624"
+  },
+  {
+    "name": "Glasuurkohuke Classic vanilli, TERE, 43 g",
+    "price": "0.35",
+    "price/unit": "8,14 \u20ac/kg",
+    "barcode": "47401051"
+  },
+  {
+    "name": "Piim 2,5%, ALMA, 1,5 l",
+    "price": "0.99",
+    "price/unit": "0,66 \u20ac/l",
+    "barcode": "4740125004106"
+  },
+  {
+    "name": "Hapukoor 20% kiles, ALMA, 500 g",
+    "price": "0.89",
+    "price/unit": "1,78 \u20ac/kg",
+    "barcode": "4740125410020"
+  },
+  {
+    "name": "Munad M10, SELVER, 10 tk",
+    "price": "1.19",
+    "price/unit": "0,12 \u20ac/tk",
+    "barcode": "4740581297500"
+  },
+  {
+    "name": "Piimatooted, munad, v\u00f5id",
+    "price": null,
+    "price/unit": "7,95 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Piim 2,5% kiles, ALMA, 1 l",
+    "price": "0.53",
+    "price/unit": "0,53 \u20ac/l",
+    "barcode": "4740125110012"
+  },
+  {
+    "name": "Piimatooted, munad, v\u00f5id",
+    "price": null,
+    "price/unit": "3,13 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Piimatooted, munad, v\u00f5id",
+    "price": null,
+    "price/unit": "3,69 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Leivad, saiad, kondiitritooted",
+    "price": null,
+    "price/unit": "1,87 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Edam juust viilutatud, SAAREMAA, 150 g",
+    "price": "1.39",
+    "price/unit": "9,27 \u20ac/kg",
+    "barcode": "4740189081945"
+  },
+  {
+    "name": "Riivjuust Cheddar, VALIO, 200g",
+    "price": "1.99",
+    "price/unit": "9,95 \u20ac/kg",
+    "barcode": "4740553690131"
+  },
+  {
+    "name": "Piimatooted, munad, v\u00f5id",
+    "price": null,
+    "price/unit": "1,70 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Hollandi Leibjuust viilutatud, SAAREMAA, 300 g",
+    "price": "2.69",
+    "price/unit": "8,97 \u20ac/kg",
+    "barcode": "4740153071835"
+  },
+  {
+    "name": "Eesti Juust t\u00e4ispiimast, viilutatud, TRADITSIOONILINE EESTI JUUST, 180 g",
+    "price": "2.19",
+    "price/unit": "12,17 \u20ac/kg",
+    "barcode": "4740572005251"
+  },
+  {
+    "name": "Sulatatud juust krevetiga, MEREVAIK, 200 g",
+    "price": "1.59",
+    "price/unit": "7,95 \u20ac/kg",
+    "barcode": "4740500000112"
+  },
+  {
+    "name": "Vene juust 28,5% viilutatud, ESTOVER, 300 g",
+    "price": "2.99",
+    "price/unit": "9,97 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Sulatatud juust r\u00f6stitud kanaga, MEREVAIK, 200 g",
+    "price": "1.59",
+    "price/unit": "7,95 \u20ac/kg",
+    "barcode": "4740500000228"
+  },
+  {
+    "name": "Mozzarella Kirsid, PIIMAMEISTER OTTO, 125 g",
+    "price": "1.49",
+    "price/unit": "11,92 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Hollandi Leibjuust 26% viilutatud, SAAREMAA, 150 g",
+    "price": "1.39",
+    "price/unit": "9,27 \u20ac/kg",
+    "barcode": "4740153081834"
+  },
+  {
+    "name": "Sulatatud juust, HIIRTE JUUST, 200 g",
+    "price": "1.19",
+    "price/unit": "5,95 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Eesti juust viil, E-PIIM, 300g",
+    "price": "2.59",
+    "price/unit": "8,63 \u20ac/kg",
+    "barcode": "4740142004196"
+  },
+  {
+    "name": "Sinihallitusjuust, ROYAL BLUE, 100 g",
+    "price": "1.39",
+    "price/unit": "13,90 \u20ac/kg",
+    "barcode": "4740572000010"
+  },
+  {
+    "name": "Sulatatud juust murulauguga, MEREVAIK, 200 g",
+    "price": "1.59",
+    "price/unit": "7,95 \u20ac/kg",
+    "barcode": "4740500000174"
+  },
+  {
+    "name": "Viilujuust Atleet Originaal 26%, VALIO, 500 g",
+    "price": "4.69",
+    "price/unit": "9,38 \u20ac/kg",
+    "barcode": "4740553691152"
+  },
+  {
+    "name": "Mozzarella, FORMAGIA, 125 g",
+    "price": "0.99",
+    "price/unit": "7,92 \u20ac/kg",
+    "barcode": "5907627470139"
+  },
+  {
+    "name": "Eesti Juust riivitud, ESTOVER, 400g",
+    "price": "2.59",
+    "price/unit": "6,48 \u20ac/kg",
+    "barcode": "4740572004995"
+  },
+  {
+    "name": "Eesti juust 25,2% viilutatud, TRADITSIOONILINE EESTI JUUST, 200 g",
+    "price": "2.19",
+    "price/unit": "10,95 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Juustupulgad, PIK-NIK, 147 g",
+    "price": "1.99",
+    "price/unit": "14,21 \u20ac/kg",
+    "barcode": "4770299046381"
+  },
+  {
+    "name": "Eesti Juust viilutatud, TRADITSIOONILINE EESTI JUUST, 350g",
+    "price": "3.29",
+    "price/unit": "9,40 \u20ac/kg",
+    "barcode": "4740572005046"
+  },
+  {
+    "name": "Saaremaa Eesti juust viil, SAAREMAA, 500 g",
+    "price": "3.99",
+    "price/unit": "7,98 \u20ac/kg",
+    "barcode": "4740153061829"
+  },
+  {
+    "name": "Hiirte juust 25,2% viilutatud, ESTOVER, 200 g",
+    "price": "2.19",
+    "price/unit": "10,95 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Eesti juust 25,2% riivitud, TRADITSIOONILINE EESTI JUUST, 200 g",
+    "price": "1.29",
+    "price/unit": "6,45 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Eesti juust 25,2% viilutatud, TRADITSIOONILINE EESTI JUUST, 500 g",
+    "price": "4.59",
+    "price/unit": "9,18 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Sulatatud juust, MEREVAIK, 200 g",
+    "price": "1.35",
+    "price/unit": "6,75 \u20ac/kg",
+    "barcode": "4740500000105"
+  },
+  {
+    "name": "Juustud",
+    "price": null,
+    "price/unit": "13,27 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Juustud",
+    "price": null,
+    "price/unit": "14,60 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Peedi-k\u00fc\u00fcslaugu-majoneesisalat, SELVERI K\u00d6\u00d6K, 700 g",
+    "price": "2.99",
+    "price/unit": "4,27 \u20ac/kg",
+    "barcode": "4740581103351"
+  },
+  {
+    "name": "Juustud",
+    "price": null,
+    "price/unit": "5,95 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Suvemarja tarretis, SELVERI K\u00d6\u00d6K, 120 g",
+    "price": "0.49",
+    "price/unit": "4,08 \u20ac/kg",
+    "barcode": "4740581106543"
+  },
+  {
+    "name": "Leivasupp vahukoorekreemiga, SELVERI K\u00d6\u00d6K, 140 g",
+    "price": "0.79",
+    "price/unit": "5,64 \u20ac/kg",
+    "barcode": "4740581108325"
+  },
+  {
+    "name": "Krabimaitseline riisisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.29",
+    "price/unit": "6,45 \u20ac/kg",
+    "barcode": "4740581103818"
+  },
+  {
+    "name": "Plov, SELVERI K\u00d6\u00d6K, 350 g",
+    "price": "1.59",
+    "price/unit": "4,54 \u20ac/kg",
+    "barcode": "4740581103955"
+  },
+  {
+    "name": "Kodune rosolje, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.29",
+    "price/unit": "6,45 \u20ac/kg",
+    "barcode": "4740581103481"
+  },
+  {
+    "name": "S\u00fcnnip\u00e4evasalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.49",
+    "price/unit": "7,45 \u20ac/kg",
+    "barcode": "4740581103412"
+  },
+  {
+    "name": "Kodune kartulisalat, SELVER, 700 g",
+    "price": "3.99",
+    "price/unit": "5,70 \u20ac/kg",
+    "barcode": "4740581106314"
+  },
+  {
+    "name": "Kakaopuding kirsikastmega, SELVERI K\u00d6\u00d6K, 160 g",
+    "price": "0.69",
+    "price/unit": "4,31 \u20ac/kg",
+    "barcode": "4740581108219"
+  },
+  {
+    "name": "Vaarikatarretis, SELVERI K\u00d6\u00d6K, 160 g",
+    "price": "0.99",
+    "price/unit": "6,19 \u20ac/kg",
+    "barcode": "4740581108134"
+  },
+  {
+    "name": "Kodune kartulisalat maasuitsusingiga, SELVER, 700 g",
+    "price": "4.49",
+    "price/unit": "6,41 \u20ac/kg",
+    "barcode": "4740581106208"
+  },
+  {
+    "name": "Munav\u00f5ie, SELVERI K\u00d6\u00d6K, 130 g",
+    "price": "1.29",
+    "price/unit": "9,92 \u20ac/kg",
+    "barcode": "4740581108349"
+  },
+  {
+    "name": "Makaroni-singisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/kg",
+    "barcode": "4740581103528"
+  },
+  {
+    "name": "K\u00fcpsisemagustoit, SELVERI K\u00d6\u00d6K, 130 g",
+    "price": "0.99",
+    "price/unit": "7,62 \u20ac/kg",
+    "barcode": "4740581108271"
+  },
+  {
+    "name": "Kapsa-porgandisalat, SELVERI K\u00d6\u00d6K, 500 g",
+    "price": "1.69",
+    "price/unit": "3,38 \u20ac/kg",
+    "barcode": "4740581103313"
+  },
+  {
+    "name": "Keefiri-marjatarretis, SELVERI K\u00d6\u00d6K, 150 g",
+    "price": "0.59",
+    "price/unit": "3,93 \u20ac/kg",
+    "barcode": "4740581108592"
+  },
+  {
+    "name": "Oa-singisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.39",
+    "price/unit": "6,95 \u20ac/kg",
+    "barcode": "4740581103399"
+  },
+  {
+    "name": "Kapsa-porgandisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/kg",
+    "barcode": "4740581103320"
+  },
+  {
+    "name": "Porgandi-ananassisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/kg",
+    "barcode": "4740581103337"
+  },
+  {
+    "name": "Kartuli-singisalat, SELVERI K\u00d6\u00d6K, 700 g",
+    "price": "3.99",
+    "price/unit": "5,70 \u20ac/kg",
+    "barcode": "4740581103429"
+  },
+  {
+    "name": "S\u00fcnnip\u00e4evasalat, SELVERI K\u00d6\u00d6K, 700 g",
+    "price": "4.49",
+    "price/unit": "6,41 \u20ac/kg",
+    "barcode": "4740581103405"
+  },
+  {
+    "name": "Vitamiinisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.19",
+    "price/unit": "5,95 \u20ac/kg",
+    "barcode": "4740581103382"
+  },
+  {
+    "name": "Peedi-k\u00fc\u00fcslaugu-majoneesisalat, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/kg",
+    "barcode": "4740581103368"
+  },
+  {
+    "name": "Vinegrett, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.19",
+    "price/unit": "5,95 \u20ac/kg",
+    "barcode": "4740581103344"
+  },
+  {
+    "name": "Kiirnuudlid v\u00fcrtsika kanaga, ROLLTON, 60 g",
+    "price": "0.29",
+    "price/unit": "4,83 \u20ac/kg",
+    "barcode": "4605496007593"
+  },
+  {
+    "name": "Kiirkaerahelbed, HELEN, 500 g",
+    "price": "0.89",
+    "price/unit": "1,78 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Valmistoidud",
+    "price": null,
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Riis Basmati, BOSTO, 500 g",
+    "price": "2.49",
+    "price/unit": "4,98 \u20ac/kg",
+    "barcode": "5410106033812"
+  },
+  {
+    "name": "Valmistoidud",
+    "price": null,
+    "price/unit": "10,95 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Valmistoidud",
+    "price": null,
+    "price/unit": "7,38 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "R\u00f6stitud j\u00e4medad kaerahelbed, VESKI MATI, 1 kg",
+    "price": "1.69",
+    "price/unit": "1,69 \u20ac/kg",
+    "barcode": "4740281006723"
+  },
+  {
+    "name": "Kiirnuudlid kanalihamaitselised, ROLLTON, 60 g",
+    "price": "0.29",
+    "price/unit": "4,83 \u20ac/kg",
+    "barcode": "4605496007494"
+  },
+  {
+    "name": "Kummelitee, HERBA, 25 g",
+    "price": "0.69",
+    "price/unit": "27,60 \u20ac/kg",
+    "barcode": "4009300002284"
+  },
+  {
+    "name": "Kookospiim, THAI CHOICE, 400 ml",
+    "price": "1.79",
+    "price/unit": "4,48 \u20ac/l",
+    "barcode": "8851978804068"
+  },
+  {
+    "name": "T\u00e4istera tortilla, SANTA MARIA, 320 g",
+    "price": "2.59",
+    "price/unit": "8,09 \u20ac/kg",
+    "barcode": "7311310031244"
+  },
+  {
+    "name": "Filtrikohv Luxus, LUXUS, 500 g",
+    "price": "4.99",
+    "price/unit": "9,98 \u20ac/kg",
+    "barcode": "2,89 \u20ac"
+  },
+  {
+    "name": "M\u00fcslibatoon \u0161okolaadi-banaani, CORNY BIG, 50 g",
+    "price": "0.69",
+    "price/unit": "13,80 \u20ac/kg",
+    "barcode": "0,59 \u20ac"
+  },
+  {
+    "name": "Jahvatatud presskannukohv Classic, PAULIG, 500 g",
+    "price": "4.39",
+    "price/unit": "8,78 \u20ac/kg",
+    "barcode": "6411300158096"
+  },
+  {
+    "name": "Tumeda \u0161okolaadi maitseline sojadessert, ALPRO, 125 g",
+    "price": "0.75",
+    "price/unit": "6,00 \u20ac/kg",
+    "barcode": "0,59 \u20ac"
+  },
+  {
+    "name": "Jahvatatud filtrikohv Classic, PAULIG, 500 g",
+    "price": "4.39",
+    "price/unit": "8,78 \u20ac/kg",
+    "barcode": "6411300158072"
+  },
+  {
+    "name": "T\u00e4isterakaerahelbed, HELEN, 500 g",
+    "price": "0.99",
+    "price/unit": "1,98 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "T\u00fckeldatud tomatid, REGGIA, 400 g",
+    "price": "0.89",
+    "price/unit": "3,71 \u20ac/kg",
+    "barcode": "8008857010038"
+  },
+  {
+    "name": "Riis pruun, BOSTO, 500 g",
+    "price": "1.39",
+    "price/unit": "2,78 \u20ac/kg",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "Neljaviljahelbed, HELEN, 500 g",
+    "price": "0.69",
+    "price/unit": "1,38 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Kanamaitselised kiirnuudlid, MIVINA, 50 g",
+    "price": "0.25",
+    "price/unit": "5,00 \u20ac/kg",
+    "barcode": "4820048617932"
+  },
+  {
+    "name": "Kohv keskmine r\u00f6st, L\u00d6FBERGS, 500 g",
+    "price": "4.89",
+    "price/unit": "9,78 \u20ac/kg",
+    "barcode": "3,00 \u20ac"
+  },
+  {
+    "name": "Kokteilikurk, SELVER, 670 g",
+    "price": "1.99",
+    "price/unit": "5,38 \u20ac/kg",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "Jahvatatud filtrikohv Presidentti Original, PAULIG, 500 g",
+    "price": "4.99",
+    "price/unit": "9,98 \u20ac/kg",
+    "barcode": "6418474020013"
+  },
+  {
+    "name": "Delikatesskurk, SELVER, 720 ml",
+    "price": "1.99",
+    "price/unit": "5,53 \u20ac/kg",
+    "barcode": "0,59 \u20ac"
+  },
+  {
+    "name": "Presskannukohv, L\u00d6FBERGS, 500 g",
+    "price": "4.89",
+    "price/unit": "9,78 \u20ac/kg",
+    "barcode": "3,00 \u20ac"
+  },
+  {
+    "name": "Suhkur, DAN SUKKER, 1 kg",
+    "price": "0.59",
+    "price/unit": "0,59 \u20ac/kg",
+    "barcode": "6414000023138"
+  },
+  {
+    "name": "Valmistoidud",
+    "price": null,
+    "price/unit": "8,54 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kuivained, hoidised",
+    "price": null,
+    "price/unit": "99,00 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kuivained, hoidised",
+    "price": null,
+    "price/unit": "1,19 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kuivained, hoidised",
+    "price": null,
+    "price/unit": "18,36 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "V\u00e4rska Originaal 6-pakk, V\u00c4RSKA, 6 x 1 L",
+    "price": "5.99",
+    "price/unit": "1,00 \u20ac/l",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Looduslik mineraalvesi karboniseeritud 6-pakk, V\u00c4RSKA MINERAL, 6 x 1 L",
+    "price": "5.69",
+    "price/unit": "0,95 \u20ac/l",
+    "barcode": "VERSKA MINERAALVEE O\u00dc"
+  },
+  {
+    "name": "Hele \u00f5lu Alexander Pint 6-pakk, 6 x 568 ml purk",
+    "price": "7.29",
+    "price/unit": "2,14 \u20ac/l",
+    "barcode": "Hele \u00f5lu 5,2%"
+  },
+  {
+    "name": "Kuivained, hoidised",
+    "price": null,
+    "price/unit": "10,26 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Vaarika-Banaani smuuti, , 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Vaarika-Banaani smuuti, , 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Lotte Vaarika smuuti, , 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Bruno Mango smuuti, , 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Apelsini-porgandimahl, KADARBIKU K\u00d6\u00d6GIVILI, 500 ml",
+    "price": "1.79",
+    "price/unit": "3,58 \u20ac/l",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Musts\u00f5stra-Banaani smuuti, , 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Musts\u00f5stra-Banaani smuuti, , 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Ananassi-kookose smuuti, FRUUTI, 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/kg",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "\u00d5una-mustika smuuti, FRUUTI, 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/kg",
+    "barcode": "4,29 \u20ac"
+  },
+  {
+    "name": "Laimi, sidruni & piparm\u00fcndi smuuti, FROOSH, 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": "FROOSH AB"
+  },
+  {
+    "name": "Mango-banaani smuuti, FRUUTI, 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": " M\u00e4\u00e4ramata"
+  },
+  {
+    "name": "Pirni lehtkapsa ja sidrunheina smuuti, FROOSH, 250 ml",
+    "price": "2.69",
+    "price/unit": "10,76 \u20ac/l",
+    "barcode": "FROOSH AB"
+  },
+  {
+    "name": "Mango, banaani, \u00f5una v\u00e4rskelt pressitud mahl, KADARBIKU K\u00d6\u00d6GIVILI, 750 ml",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": "KADARBIKU K\u00d6\u00d6GIVILI O\u00dc"
+  },
+  {
+    "name": "Avokaado v\u00e4rskelt pressitud mahl, KADARBIKU K\u00d6\u00d6GIVILI, 250 ml",
+    "price": "2.99",
+    "price/unit": "11,96 \u20ac/l",
+    "barcode": "KADARBIKU K\u00d6\u00d6GIVILI O\u00dc"
+  },
+  {
+    "name": "Vaarika, mustika, banaani, \u00f5una v\u00e4rskelt pressitud mahl, KADARBIKU K\u00d6\u00d6GIVILI, 250 ml",
+    "price": "2.79",
+    "price/unit": "11,16 \u20ac/l",
+    "barcode": "KADARBIKU K\u00d6\u00d6GIVILI O\u00dc"
+  },
+  {
+    "name": "Apelsini, \u00f5una v\u00e4rskelt pressitud mahl, KADARBIKU K\u00d6\u00d6GIVILI, 250 ml",
+    "price": "2.99",
+    "price/unit": "11,96 \u20ac/l",
+    "barcode": "KADARBIKU K\u00d6\u00d6GIVILI O\u00dc"
+  },
+  {
+    "name": "\u00d5una, sidruni, piparm\u00fcndi v\u00e4rskelt pressitud mahl, KADARBIKU K\u00d6\u00d6GIVILI, 250 ml",
+    "price": "2.99",
+    "price/unit": "11,96 \u20ac/l",
+    "barcode": "KADARBIKU K\u00d6\u00d6GIVILI O\u00dc"
+  },
+  {
+    "name": "Tomati-k\u00f6\u00f6givilja smuuti, PAI, 280 ml",
+    "price": "1.69",
+    "price/unit": "6,04 \u20ac/l",
+    "barcode": "ORKLA EESTI AS"
+  },
+  {
+    "name": "Kompvekkide segu \"7 lemmikut\", KALEV, 500 g",
+    "price": "3.99",
+    "price/unit": "7,98 \u20ac/kg",
+    "barcode": "4740012026839"
+  },
+  {
+    "name": "Pastillid Tutti Frutti, TUTTI FRUTTI, 15 g",
+    "price": "0.25",
+    "price/unit": "16,67 \u20ac/kg",
+    "barcode": "6410107200410"
+  },
+  {
+    "name": "J\u00f5hvika-p\u00e4hklite segu, GERMUND, 300 g",
+    "price": "4.99",
+    "price/unit": "16,63 \u20ac/kg",
+    "barcode": "4742155002077"
+  },
+  {
+    "name": "Joogid",
+    "price": null,
+    "price/unit": "21,05 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Joogid",
+    "price": null,
+    "price/unit": "0,99 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Tume \u0161okolaad Tuljak t\u00e4idisega, KALEV, 105 g",
+    "price": "1.39",
+    "price/unit": "13,24 \u20ac/kg",
+    "barcode": "4740012036494"
+  },
+  {
+    "name": "Tudengi eine Premium, GERMUND, 300 g",
+    "price": "4.99",
+    "price/unit": "16,63 \u20ac/kg",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Batoon Kaseke, KALEV, 150 g",
+    "price": "1.39",
+    "price/unit": "9,27 \u20ac/kg",
+    "barcode": "1,09 \u20ac"
+  },
+  {
+    "name": "Joogid",
+    "price": null,
+    "price/unit": "13,20 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Joogid",
+    "price": null,
+    "price/unit": "2,40 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Kalev Ekstra teek\u00fcpsis, 180 g",
+    "price": "0.59",
+    "price/unit": "3,28 \u20ac/kg",
+    "barcode": "4740084000225"
+  },
+  {
+    "name": "Kompvekid Tiina, KALEV, 175 g",
+    "price": "1.49",
+    "price/unit": "8,51 \u20ac/kg",
+    "barcode": "4740012023722"
+  },
+  {
+    "name": "Vahvlikompvekid Tallinn, KALEV, 150 g",
+    "price": "1.69",
+    "price/unit": "11,27 \u20ac/kg",
+    "barcode": "1,39 \u20ac"
+  },
+  {
+    "name": "Valeri k\u00fcpsis, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "1.69",
+    "price/unit": "8,45 \u20ac/kg",
+    "barcode": "4740581105614"
+  },
+  {
+    "name": "Must n\u00e4kileib p\u00e4evalilles., FAZER, 150 g",
+    "price": "1.29",
+    "price/unit": "8,60 \u20ac/kg",
+    "barcode": "4740103021101"
+  },
+  {
+    "name": "\u0160okolaad KitKat, NESTLE, 41,5 g",
+    "price": "0.59",
+    "price/unit": "14,22 \u20ac/kg",
+    "barcode": "40052434"
+  },
+  {
+    "name": "Martsipanibatoon, KALEV, 40 g",
+    "price": "0.55",
+    "price/unit": "13,75 \u20ac/kg",
+    "barcode": "4740012021551"
+  },
+  {
+    "name": "\u0160okolaad, SNICKERS, 50 g",
+    "price": "0.49",
+    "price/unit": "9,80 \u20ac/kg",
+    "barcode": "0,39 \u20ac"
+  },
+  {
+    "name": "Kompvekid Kalev, KALEV, 175 g",
+    "price": "1.89",
+    "price/unit": "10,80 \u20ac/kg",
+    "barcode": "4740012023678"
+  },
+  {
+    "name": "M\u00f5nus maius Mesik\u00e4pp, KALEV, 25 g",
+    "price": "0.45",
+    "price/unit": "18,00 \u20ac/kg",
+    "barcode": "4740012026488"
+  },
+  {
+    "name": "Premium P\u00e4hklite segu, GERMUND, 250 g",
+    "price": "4.99",
+    "price/unit": "19,96 \u20ac/kg",
+    "barcode": "4742155002015"
+  },
+  {
+    "name": "Pulgakomm Fruit with juice + cola, CHUPA CHUPS, 12 g",
+    "price": "0.19",
+    "price/unit": "15,83 \u20ac/l",
+    "barcode": "46034595"
+  },
+  {
+    "name": "Vanilje k\u00fcpsis, SELGA, 180 g",
+    "price": "0.65",
+    "price/unit": "3,61 \u20ac/kg",
+    "barcode": "0,49 \u20ac"
+  },
+  {
+    "name": "\u0160okolaad Snickers 2-pakk, SNICKERS, 75g",
+    "price": "0.69",
+    "price/unit": "9,20 \u20ac/kg",
+    "barcode": "5900951027307"
+  },
+  {
+    "name": "Kalev klassikaline k\u00fcpsis, 165 g",
+    "price": "0.59",
+    "price/unit": "3,62 \u20ac/kg",
+    "barcode": "4740012375470"
+  },
+  {
+    "name": "Pralineekompvek Maiuspala, KALEV, 175 g",
+    "price": "1.89",
+    "price/unit": "10,80 \u20ac/kg",
+    "barcode": "4740012027478"
+  },
+  {
+    "name": "\u00dcllatusmuna Kinder Surprise, FERRERO, 20 g",
+    "price": "0.99",
+    "price/unit": "49,50 \u20ac/kg",
+    "barcode": "0,89 \u20ac"
+  },
+  {
+    "name": "Linaseemned, REFORMI, 500 g",
+    "price": "1.59",
+    "price/unit": "3,18 \u20ac/kg",
+    "barcode": "6409942200037"
+  },
+  {
+    "name": "Dipikaste aia\u00fcrtidega 19,4%, FARMI, 200 g",
+    "price": "1.39",
+    "price/unit": "6,95 \u20ac/kg",
+    "barcode": "1,00 \u20ac"
+  },
+  {
+    "name": "S\u00f6\u00f6gi\u00e4\u00e4dikas, 1 l",
+    "price": "1.19",
+    "price/unit": "1,19 \u20ac/l",
+    "barcode": "4742007000282"
+  },
+  {
+    "name": "Provansaal majonees 50%, TARPLAN, 430 g",
+    "price": "1.09",
+    "price/unit": "2,53 \u20ac/kg",
+    "barcode": "4740159000112"
+  },
+  {
+    "name": "Maiustused, k\u00fcpsised, n\u00e4ksid",
+    "price": null,
+    "price/unit": "19,93 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Maiustused, k\u00fcpsised, n\u00e4ksid",
+    "price": null,
+    "price/unit": "3,62 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Maiustused, k\u00fcpsised, n\u00e4ksid",
+    "price": null,
+    "price/unit": "42,50 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Maiustused, k\u00fcpsised, n\u00e4ksid",
+    "price": null,
+    "price/unit": "29,67 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Tomatipasta, POMI, 500 g",
+    "price": "1.19",
+    "price/unit": "2,38 \u20ac/kg",
+    "barcode": "8032793342311"
+  },
+  {
+    "name": "Majonees Original, HELLMANN'S, 880 ml",
+    "price": "3.99",
+    "price/unit": "4,53 \u20ac/l",
+    "barcode": "8714100079805"
+  },
+  {
+    "name": "Kalamata Ekstra Neitsioliivi\u00f5li, GOURMANTE, 500 ml",
+    "price": "6.89",
+    "price/unit": "13,78 \u20ac/l",
+    "barcode": "5200110730018"
+  },
+  {
+    "name": "Tomatip\u00fcree Tomacouli, PANZANI, 200 g",
+    "price": "0.69",
+    "price/unit": "3,45 \u20ac/kg",
+    "barcode": "0,59 \u20ac"
+  },
+  {
+    "name": "Dipikaste Dipp-Tops k\u00fc\u00fcslaugu, TERE, 200 g",
+    "price": "1.39",
+    "price/unit": "6,95 \u20ac/kg",
+    "barcode": "4740036004554"
+  },
+  {
+    "name": "Dipikaste Dipp-tops maitseroh., TERE, 200 g",
+    "price": "1.39",
+    "price/unit": "6,95 \u20ac/kg",
+    "barcode": "4740036009009"
+  },
+  {
+    "name": "Rapsi\u00f5li Olivia, OLIVIA, 500 ml",
+    "price": "1.39",
+    "price/unit": "2,78 \u20ac/l",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Oliivi\u00f5li rafineeritud ja neitsioliivi\u00f5list Light, BORGES, 500 ml",
+    "price": "5.99",
+    "price/unit": "11,98 \u20ac/l",
+    "barcode": "8410179300825"
+  },
+  {
+    "name": "Majonees Provansaal Lemmik, LEMMIK, 405 ml",
+    "price": "0.99",
+    "price/unit": "2,44 \u20ac/kg",
+    "barcode": "4740502002053"
+  },
+  {
+    "name": "Majonees Provansaal Premium, TARPLAN, 210 g",
+    "price": "0.79",
+    "price/unit": "3,76 \u20ac/kg",
+    "barcode": "4740159000730"
+  },
+  {
+    "name": "Tomatiket\u0161up, FELIX, 1250 g",
+    "price": "2.99",
+    "price/unit": "2,39 \u20ac/kg",
+    "barcode": "1,99 \u20ac"
+  },
+  {
+    "name": "Tomatiket\u0161up, FELIX, 500 g",
+    "price": "1.69",
+    "price/unit": "3,38 \u20ac/kg",
+    "barcode": "4740029606345"
+  },
+  {
+    "name": "Tomatiket\u0161up, FELIX, 1 kg",
+    "price": "2.59",
+    "price/unit": "2,59 \u20ac/kg",
+    "barcode": "4740029600749"
+  },
+  {
+    "name": "Tomatipasta tomatera, MELISSA PRIMO GUSTO, 500 g",
+    "price": "0.79",
+    "price/unit": "1,58 \u20ac/kg",
+    "barcode": "5201193798018"
+  },
+  {
+    "name": "Majonees Provansaal, TARPLAN, 900 g",
+    "price": "2.39",
+    "price/unit": "2,66 \u20ac/kg",
+    "barcode": "1,79 \u20ac"
+  },
+  {
+    "name": "Majonees Provansaal, TARPLAN, 410 g",
+    "price": "0.99",
+    "price/unit": "2,41 \u20ac/kg",
+    "barcode": "4740159000716"
+  },
+  {
+    "name": "Majonees Provansaal, LEMMIK, 700 ml",
+    "price": "1.79",
+    "price/unit": "2,56 \u20ac/kg",
+    "barcode": "4740502002152"
+  },
+  {
+    "name": "Sinep P\u00f5ltsamaa Kange, P\u00d5LTSAMAA, 65 g",
+    "price": "0.79",
+    "price/unit": "10,53 \u20ac/kg",
+    "barcode": "4740029047018"
+  },
+  {
+    "name": "Tomatipasta, POMI, 200 g",
+    "price": "0.69",
+    "price/unit": "3,45 \u20ac/kg",
+    "barcode": "8002580043103"
+  },
+  {
+    "name": "Original majonees, HELLMANN'S, 420 ml",
+    "price": "2.19",
+    "price/unit": "5,21 \u20ac/l",
+    "barcode": "8722700652038"
+  },
+  {
+    "name": "Rapsi\u00f5li Olivia, OLIVIA, 1 l",
+    "price": "2.09",
+    "price/unit": "2,09 \u20ac/l",
+    "barcode": "4741178991009"
+  },
+  {
+    "name": "Kastmed, \u00f5lid",
+    "price": null,
+    "price/unit": "39,96 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Mini-frikadellid Pealinna, PREMIA, 350 g",
+    "price": "1.79",
+    "price/unit": "5,11 \u20ac/kg",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Kastmed, \u00f5lid",
+    "price": null,
+    "price/unit": "11,74 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kastmed, \u00f5lid",
+    "price": null,
+    "price/unit": "9,35 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Eriti Rammus \u0161okolaadi t\u00fckkidega vanilli koorej\u00e4\u00e4tis, PREMIA, 110 g",
+    "price": "1.19",
+    "price/unit": "10,82 \u20ac/kg",
+    "barcode": "4740093364103"
+  },
+  {
+    "name": "Vanilli-koorej\u00e4\u00e4tis \u0161okolaadit\u00fckkidega vahvlitopsis, BALBIINO, 75 g",
+    "price": "0.75",
+    "price/unit": "10,00 \u20ac/kg",
+    "barcode": "4740188017884"
+  },
+  {
+    "name": "Vanilli koorej\u00e4\u00e4tis vahvlitopsis, BALBIINO, 75 g",
+    "price": "0.75",
+    "price/unit": "10,00 \u20ac/kg",
+    "barcode": "4740188015002"
+  },
+  {
+    "name": "Regatt vanilli koorej\u00e4\u00e4tis vahvlitopsis, PREMIA, 65 g",
+    "price": "0.69",
+    "price/unit": "10,62 \u20ac/kg",
+    "barcode": "0,49 \u20ac"
+  },
+  {
+    "name": "Suvine supisegu, H\u00c4RMAVILI, 400 g",
+    "price": "1.09",
+    "price/unit": "2,73 \u20ac/kg",
+    "barcode": "4740188900117"
+  },
+  {
+    "name": "Frikadellid, RAKVERE LK, 400 g",
+    "price": "2.19",
+    "price/unit": "5,48 \u20ac/kg",
+    "barcode": "1,79 \u20ac"
+  },
+  {
+    "name": "Brokkoli, lillkapsas, porgand, H\u00c4RMAVILI, 400 g",
+    "price": "1.19",
+    "price/unit": "2,98 \u20ac/kg",
+    "barcode": "4740188900735"
+  },
+  {
+    "name": "Pelmeenid Pealinna, PREMIA, 350 g",
+    "price": "1.59",
+    "price/unit": "4,54 \u20ac/kg",
+    "barcode": "4740093000889"
+  },
+  {
+    "name": "Brokkoli, H\u00c4RMAVILI, 400 g",
+    "price": "1.19",
+    "price/unit": "2,98 \u20ac/kg",
+    "barcode": "4740188900841"
+  },
+  {
+    "name": "Vanilliplombiir \u0161olaadiglasuuriga, VANA TOOMAS, 90 g",
+    "price": "0.99",
+    "price/unit": "11,00 \u20ac/kg",
+    "barcode": "4740093021020"
+  },
+  {
+    "name": "Limonaadi-ja guanabamaitseline j\u00e4\u00e4tis, LIMPA, 70 g",
+    "price": "0.39",
+    "price/unit": "5,57 \u20ac/kg",
+    "barcode": "4740093005471"
+  },
+  {
+    "name": "Vaarikad, MARJAMAA TALU, 300 g",
+    "price": "3.99",
+    "price/unit": "13,30 \u20ac/kg",
+    "barcode": "4742331000255"
+  },
+  {
+    "name": "Roheline hernes, H\u00c4RMAVILI, 400 g",
+    "price": "1.09",
+    "price/unit": "2,73 \u20ac/kg",
+    "barcode": "0,79 \u20ac"
+  },
+  {
+    "name": "Vanillij\u00e4\u00e4tis \u0161okolaadiglasuuris, VANILLA NINJA, 80 g",
+    "price": "0.79",
+    "price/unit": "9,88 \u20ac/kg",
+    "barcode": "4740188000169"
+  },
+  {
+    "name": "Kaneelisaiake, EESTI PAGAR, 320 g",
+    "price": "1.89",
+    "price/unit": "5,91 \u20ac/kg",
+    "barcode": "1,39 \u20ac"
+  },
+  {
+    "name": "Kalapulgad, ESVA, 250 g",
+    "price": "0.87",
+    "price/unit": "3,48 \u20ac/kg",
+    "barcode": "4740056091008"
+  },
+  {
+    "name": "Maasikad, H\u00c4RMAVILI, 400 g",
+    "price": "2.29",
+    "price/unit": "5,73 \u20ac/kg",
+    "barcode": "4740188910963"
+  },
+  {
+    "name": "Vanilliplombiir p\u00e4hklit\u00e4idise ja p\u00e4hkliglasuuriga, V\u00c4IKE TOM, 60 g",
+    "price": "0.69",
+    "price/unit": "11,50 \u20ac/kg",
+    "barcode": "4740093003330"
+  },
+  {
+    "name": "Woki segu, H\u00c4RMAVILI, 400 g",
+    "price": "1.19",
+    "price/unit": "2,98 \u20ac/kg",
+    "barcode": "4740188900711"
+  },
+  {
+    "name": "K\u00fclmutatud toidukaubad",
+    "price": null,
+    "price/unit": "9,83 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Pasta Tagliatelle, BARILLA, 500 g",
+    "price": "2.49",
+    "price/unit": "4,98 \u20ac/kg",
+    "barcode": "8076808201293"
+  },
+  {
+    "name": "K\u00fclmutatud toidukaubad",
+    "price": null,
+    "price/unit": "1,09 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Oliivid rohelised kivita, LOMBARDI, 314 ml",
+    "price": "2.29",
+    "price/unit": "7,29 \u20ac/l",
+    "barcode": "8008500003172"
+  },
+  {
+    "name": "K\u00fclmutatud toidukaubad",
+    "price": null,
+    "price/unit": "9,18 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Veisepuljongi kuubikud, KALLO FOODS, 66 g",
+    "price": "2.99",
+    "price/unit": "45,30 \u20ac/kg",
+    "barcode": "5013665103530"
+  },
+  {
+    "name": "K\u00fclmutatud toidukaubad",
+    "price": null,
+    "price/unit": "6,53 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Prosciutto Crudo sink viil, I.B.I.S SPA, 500 g",
+    "price": "15.99",
+    "price/unit": "31,98 \u20ac/kg",
+    "barcode": "8002980001284"
+  },
+  {
+    "name": "Limonaad rohelise \u00f5una, EFFERVE, 75 cl",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Prosciutto Di Parma, NEGRONI, 80 g",
+    "price": "4.29",
+    "price/unit": "53,63 \u20ac/kg",
+    "barcode": "8028257008312"
+  },
+  {
+    "name": "Sink Coppa, NEGRONI, 100 g",
+    "price": "3.99",
+    "price/unit": "39,90 \u20ac/kg",
+    "barcode": "8028257008350"
+  },
+  {
+    "name": "Jahvatatud kohv Colombia hele r\u00f6st, COFFEE PEOPLE, 250 g",
+    "price": "7.99",
+    "price/unit": "31,96 \u20ac/kg",
+    "barcode": "4744286010075"
+  },
+  {
+    "name": "Pesto p\u00e4ikesekuivatatud tomatitega, FILIPPO BERIO, 190 g",
+    "price": "2.39",
+    "price/unit": "12,58 \u20ac/kg",
+    "barcode": "1,99 \u20ac"
+  },
+  {
+    "name": "Pesto traditsiooniline, FILIPPO BERIO, 190 g",
+    "price": "2.39",
+    "price/unit": "12,58 \u20ac/kg",
+    "barcode": "1,99 \u20ac"
+  },
+  {
+    "name": "Salaami Milano, NEGRONI, 100 g",
+    "price": "3.29",
+    "price/unit": "32,90 \u20ac/kg",
+    "barcode": "8028257008244"
+  },
+  {
+    "name": "Mandariini-laimi limonaad, EFFERVE, 75 cl",
+    "price": "4.79",
+    "price/unit": "6,39 \u20ac/l",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Kohvioad Colombia Espresso, COFFEE PEOPLE, 500 g",
+    "price": "15.99",
+    "price/unit": "31,98 \u20ac/kg",
+    "barcode": "4744286010044"
+  },
+  {
+    "name": "Naturaalne limonaad Aranciata, SANPELLEGRINO, 200 ml",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/l",
+    "barcode": "SANPELLEGRINO S.P.A"
+  },
+  {
+    "name": "Shirataki madala kalorsusega nuudlid, CITY AROMA, neto 200 g",
+    "price": "2.29",
+    "price/unit": "11,45 \u20ac/kg",
+    "barcode": "6922163616819"
+  },
+  {
+    "name": "Viilutatud Chorizo, LA SELVA, 60 g",
+    "price": "1.99",
+    "price/unit": "33,17 \u20ac/kg",
+    "barcode": "8410973474289"
+  },
+  {
+    "name": "Mandlijahu, NATCO, 300 g",
+    "price": "6.99",
+    "price/unit": "23,30 \u20ac/kg",
+    "barcode": "5013531110204"
+  },
+  {
+    "name": "Karastusjook Limonata, SANPELLEGRINO, 200 ml",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/l",
+    "barcode": "SANPELLEGRINO S.P.A"
+  },
+  {
+    "name": "Viilutatud Fuet, LA SELVA, 60 g",
+    "price": "1.99",
+    "price/unit": "33,17 \u20ac/kg",
+    "barcode": "8410973474258"
+  },
+  {
+    "name": "Nat. limonaad Aranciata Rossa, SANPELLEGRINO, 200 ml",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/l",
+    "barcode": "SANPELLEGRINO S.P.A"
+  },
+  {
+    "name": "Jook Chinotto, SANPELLEGRINO, 200 ml",
+    "price": "0.99",
+    "price/unit": "4,95 \u20ac/l",
+    "barcode": "SANPELLEGRINO S.P.A"
+  },
+  {
+    "name": "Sink Prosciutto Crudo, NEGRONI, 100 g",
+    "price": "4.59",
+    "price/unit": "45,90 \u20ac/kg",
+    "barcode": "8028257011459"
+  },
+  {
+    "name": "Riisivahvlid tumeda \u0161okolaadiga, KUPIEC, 90 g",
+    "price": "1.19",
+    "price/unit": "13,22 \u20ac/kg",
+    "barcode": "5906747171742"
+  },
+  {
+    "name": "Selver Gurmee",
+    "price": null,
+    "price/unit": "30,39 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Selver Gurmee",
+    "price": null,
+    "price/unit": "11,96 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Kana-pastaroog \u00f6ko 8+, P\u00d5NN, 120 g",
+    "price": "1.79",
+    "price/unit": "14,92 \u20ac/kg",
+    "barcode": "4740073071274"
+  },
+  {
+    "name": "Selver Gurmee",
+    "price": null,
+    "price/unit": "83,00 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Selver Gurmee",
+    "price": null,
+    "price/unit": "6,39 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Spagetid Bolognese kastmega \u00f6ko 8+, P\u00d5NN, 120 g",
+    "price": "1.79",
+    "price/unit": "14,92 \u20ac/kg",
+    "barcode": "4740073071281"
+  },
+  {
+    "name": "Beebisalvr\u00e4tid, NEUTRAL, 63 tk",
+    "price": "3.49",
+    "price/unit": "0,06 \u20ac/tk",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Maasikasmuuti 6+ \u00f6ko, P\u00d5NN, 110 g",
+    "price": "1.49",
+    "price/unit": "13,55 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "L\u00f5herisotto 8+ \u00f6ko, P\u00d5NN, 120 g",
+    "price": "1.79",
+    "price/unit": "14,92 \u20ac/kg",
+    "barcode": "4740073071267"
+  },
+  {
+    "name": "Ploomip\u00fcree 4+, P\u00d5NN, 130 g",
+    "price": "1.19",
+    "price/unit": "9,15 \u20ac/kg",
+    "barcode": "4740073121115"
+  },
+  {
+    "name": "Aedviljap\u00fcree kanafileega 6+, P\u00d5NN, 190 g",
+    "price": "1.49",
+    "price/unit": "7,84 \u20ac/kg",
+    "barcode": "4740073071359"
+  },
+  {
+    "name": "Niisked salvr\u00e4tikud New Baby Sensitive, PAMPERS, 54 tk",
+    "price": "1.99",
+    "price/unit": "0,04 \u20ac/tk",
+    "barcode": "4015400686101"
+  },
+  {
+    "name": "Beebisalvr\u00e4tikud niisutatud, BRITTON, 64 tk",
+    "price": "1.29",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "4743171022049"
+  },
+  {
+    "name": "Niisked salvr\u00e4tikud Sensitive, PAMPERS, 56 tk",
+    "price": "2.29",
+    "price/unit": "0,04 \u20ac/tk",
+    "barcode": "4015400636649"
+  },
+  {
+    "name": "\u00d5una-, pirni- ja banaanip\u00fcree BIO 4k, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "9062300433743"
+  },
+  {
+    "name": "\u00d5una-banaanip\u00fcree kirsi ja t\u00e4isteraviljaga BIO 6k, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "4062300278615"
+  },
+  {
+    "name": "K\u00f6\u00f6giviljap\u00fcree veiselihaga 6+, P\u00d5NN, 190 g",
+    "price": "1.49",
+    "price/unit": "7,84 \u20ac/kg",
+    "barcode": "4740073071342"
+  },
+  {
+    "name": "K\u00f6\u00f6giviljap\u00fcree kanalihaga \u00f6ko 6+, P\u00d5NN, 110 g",
+    "price": "1.49",
+    "price/unit": "13,55 \u20ac/kg",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "Pirnip\u00fcree banaani ja kiiviga BIO 6K, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "9062300133797"
+  },
+  {
+    "name": "Banaanip\u00fcree pirni ja mangoga BIO, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "9062300133766"
+  },
+  {
+    "name": "\u00d5unap\u00fcree virsiku ja metsamarjadega BIO, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "9062300131052"
+  },
+  {
+    "name": "\u00d5una-banaanip\u00fcree, vaarika ja t\u00e4isteraviljaga BIO 6K, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "\u00d5unap\u00fcree maasikate-banaanidega BIO, HIPPIS, 100 g",
+    "price": "1.29",
+    "price/unit": "12,90 \u20ac/kg",
+    "barcode": "9062300140825"
+  },
+  {
+    "name": "Pirnip\u00fcree \u00f6ko 4+, P\u00d5NN, 100 g",
+    "price": "1.49",
+    "price/unit": "14,90 \u20ac/kg",
+    "barcode": "4740073070895"
+  },
+  {
+    "name": "Neljaviljapuder banaani ja mustikaga \u00f6ko 6+, P\u00d5NN, 110 g",
+    "price": "1.59",
+    "price/unit": "14,45 \u20ac/kg",
+    "barcode": "4740073071137"
+  },
+  {
+    "name": "K\u00f6\u00f6giviljap\u00fcree veiselihaga \u00f6ko 6+, P\u00d5NN, 110 g",
+    "price": "1.59",
+    "price/unit": "14,45 \u20ac/kg",
+    "barcode": "4740073071083"
+  },
+  {
+    "name": "Mustika-\u00f5unap\u00fcree \u00f6ko, P\u00d5NN, 100 g",
+    "price": "1.49",
+    "price/unit": "14,90 \u20ac/kg",
+    "barcode": "4740073070901"
+  },
+  {
+    "name": "Mangop\u00fcree \u00f6ko 4+, P\u00d5NN, 100 g",
+    "price": "1.49",
+    "price/unit": "14,90 \u20ac/kg",
+    "barcode": "1,19 \u20ac"
+  },
+  {
+    "name": "Lastekaubad",
+    "price": null,
+    "price/unit": "21,23 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Lastekaubad",
+    "price": null,
+    "price/unit": "28,30 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Salvr\u00e4tikud karbis Everyday, 2-kihiline, ZEWA, 100 tk/pk",
+    "price": "1.29",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "7322540043464"
+  },
+  {
+    "name": "Vatipadjad mikrofiiber, BEL, 70 tk",
+    "price": "1.19",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "0,95 \u20ac"
+  },
+  {
+    "name": "Lastekaubad",
+    "price": null,
+    "price/unit": "0,29 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Taskur\u00e4tik Softis, 4-kihiline, ZEWA, 10x10 tk",
+    "price": "2.29",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "4006670380929"
+  },
+  {
+    "name": "Hambahari Clean Between Soft, JORDAN, tk",
+    "price": "2.19",
+    "price/unit": "2,19 \u20ac/tk",
+    "barcode": "7038516557308"
+  },
+  {
+    "name": "Lastekaubad",
+    "price": null,
+    "price/unit": "7,48 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Hambapasta Total Original, COLGATE, 75 ml",
+    "price": "1.99",
+    "price/unit": "26,53 \u20ac/l",
+    "barcode": "8714789424071"
+  },
+  {
+    "name": "H\u00fcgieenisidemed Invisible Ultra Thin Normal, LIBRESSE, 10 tk",
+    "price": "1.69",
+    "price/unit": "0,17 \u20ac/tk",
+    "barcode": "7310790088731"
+  },
+  {
+    "name": "Vatipadjad, \u00fcmmargused, ELISE, 120 tk",
+    "price": "1.19",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "4742002004872"
+  },
+  {
+    "name": "Taskur\u00e4tikud Softis, 4-kihti, ZEWA, 10 tk/pk",
+    "price": "0.29",
+    "price/unit": "0,03 \u20ac/tk",
+    "barcode": "7322540344226"
+  },
+  {
+    "name": "Niisked salvr\u00e4tid antibakteriaalsed, AURA, 15 tk",
+    "price": "0.39",
+    "price/unit": "0,03 \u20ac/tk",
+    "barcode": "4751023291710"
+  },
+  {
+    "name": "Hambapasta Triple Action, COLGATE, 100 ml",
+    "price": "1.69",
+    "price/unit": "16,90 \u20ac/l",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Vatitikud kiles, SMILE, 160 tk",
+    "price": "0.59",
+    "price/unit": "0,00 \u20ac/tk",
+    "barcode": "4742002005046"
+  },
+  {
+    "name": "Hambapasta Total Advanced Whitening, COLGATE, 125 ml",
+    "price": "1.99",
+    "price/unit": "15,92 \u20ac/l",
+    "barcode": "8693495013192"
+  },
+  {
+    "name": "Seep lastele, FLORA, 90 g",
+    "price": "0.69",
+    "price/unit": "7,67 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "H\u00fcgieenisidemed Invisible Ultra, LIBRESSE, 20 tk",
+    "price": "2.59",
+    "price/unit": "0,13 \u20ac/tk",
+    "barcode": "7310791245607"
+  },
+  {
+    "name": "Taskur\u00e4tikud Softis l\u00f5hnatud, 4-, ZEWA, 6x10 tk/pk",
+    "price": "1.39",
+    "price/unit": "0,23 \u20ac/tk",
+    "barcode": "4006670380240"
+  },
+  {
+    "name": "Salvr\u00e4tid Camomille box, 4-kihiline, REGINA, 110 tk",
+    "price": "1.69",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "8004260487900"
+  },
+  {
+    "name": "Taskur\u00e4tikud, 3-kihiline, LAMBI, 80 tk/pk",
+    "price": "1.69",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "7316970580408"
+  },
+  {
+    "name": "Taskur\u00e4tik karbis Softis Soft & Sensitive, 4-kihiline, ZEWA, 80 tk",
+    "price": "1.79",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Salvr\u00e4tikud Delicatis , 4-kihiline, REGINA, 110 tk",
+    "price": "1.69",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "8004260489997"
+  },
+  {
+    "name": "Taskur\u00e4tikud, 3-kihiline, LAMBI, 80 tk/pk",
+    "price": "1.69",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "7316970580804"
+  },
+  {
+    "name": "Taskur\u00e4tikud, 3-kihiline, SERLA, 10x10 tk/pk",
+    "price": "1.19",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "0,89 \u20ac"
+  },
+  {
+    "name": "Vatipadjad \u00fcmmargused, SELVER, 80 tk",
+    "price": "0.89",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "4742002005183"
+  },
+  {
+    "name": "Taskur\u00e4tikud Softis In Box, 4-ki, ZEWA, 80 tk",
+    "price": "1.79",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "7322540441574"
+  },
+  {
+    "name": "Salvr\u00e4tikud karbis Family, 3-kihiline, ZEWA, 90 tk",
+    "price": "1.59",
+    "price/unit": "0,02 \u20ac/tk",
+    "barcode": "4006670128002"
+  },
+  {
+    "name": "Kiisueine forelli ja spinatiga, GOURMET PERLE, 85 g",
+    "price": "0.89",
+    "price/unit": "10,47 \u20ac/kg",
+    "barcode": "7613033774249"
+  },
+  {
+    "name": "Kiisueine tuunikalaga kastmes, SHEBA, 85 g",
+    "price": "0.75",
+    "price/unit": "8,82 \u20ac/kg",
+    "barcode": "3065890099944"
+  },
+  {
+    "name": "Enesehooldustarbed",
+    "price": null,
+    "price/unit": "16,95 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Kiisueine kanaga, FELIX, 100 g",
+    "price": "0.55",
+    "price/unit": "5,50 \u20ac/kg",
+    "barcode": "7613034442031"
+  },
+  {
+    "name": "Enesehooldustarbed",
+    "price": null,
+    "price/unit": "2,49 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Kassikonserv Duo k\u00fc\u00fclik, maks, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033775697"
+  },
+  {
+    "name": "Enesehooldustarbed",
+    "price": null,
+    "price/unit": "35,60 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Enesehooldustarbed",
+    "price": null,
+    "price/unit": "0,05 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Kassikonserv kalkuni-pardit\u00fckkidega, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033776564"
+  },
+  {
+    "name": "Kiisueine kanalihaga kastmes, SHEBA, 85 g",
+    "price": "0.75",
+    "price/unit": "8,82 \u20ac/kg",
+    "barcode": "3065890098770"
+  },
+  {
+    "name": "Kassitoit linnulihaga, ATHENA, 100 g",
+    "price": "0.49",
+    "price/unit": "4,90 \u20ac/kg",
+    "barcode": "4010492052278"
+  },
+  {
+    "name": "Kassikonserv kanamaksa t\u00fckkidega, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033776250"
+  },
+  {
+    "name": "Kiisueine l\u00f5hega kastmes, SHEBA, 85 g",
+    "price": "0.75",
+    "price/unit": "8,82 \u20ac/kg",
+    "barcode": "3065890098756"
+  },
+  {
+    "name": "Kiisueine kanalihaga, GOURMET PERLE, 85 g",
+    "price": "0.89",
+    "price/unit": "10,47 \u20ac/kg",
+    "barcode": "7613030473381"
+  },
+  {
+    "name": "Koeratoit linnu-ja lambalihaga, APOLLO, 300 g",
+    "price": "0.99",
+    "price/unit": "3,30 \u20ac/kg",
+    "barcode": "4010492051981"
+  },
+  {
+    "name": "Kiisueine loomaliha-tomati, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613035464032"
+  },
+  {
+    "name": "Koeratoit metslooma-linnulihaga, APOLLO, 300 g",
+    "price": "0.99",
+    "price/unit": "3,30 \u20ac/kg",
+    "barcode": "4010492051974"
+  },
+  {
+    "name": "Kiisueine lambaliha-roheliste ubadega, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613035465695"
+  },
+  {
+    "name": "Kassikonserv Duo loomaliha, kana, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033775666"
+  },
+  {
+    "name": "Kassikonserv loomalihapasteet, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033776281"
+  },
+  {
+    "name": "Koeratoit loomaliha ja maksaga, APOLLO, 300 g",
+    "price": "0.99",
+    "price/unit": "3,30 \u20ac/kg",
+    "barcode": "4010492051967"
+  },
+  {
+    "name": "Kassikonserv l\u00f5he, kana t\u00fckkidega, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033775727"
+  },
+  {
+    "name": "Kassikonserv kalkunipasteet, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033776533"
+  },
+  {
+    "name": "Kiisueine kana-porgandi, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613035465664"
+  },
+  {
+    "name": "Kassikonserv tuunikalapasteet, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033780554"
+  },
+  {
+    "name": "Kassikonserv kanapasteet, GOURMET GOLD, 85 g",
+    "price": "0.65",
+    "price/unit": "7,65 \u20ac/kg",
+    "barcode": "7613033776595"
+  },
+  {
+    "name": "Lemmikloomakaubad",
+    "price": null,
+    "price/unit": "4,28 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Lemmikloomakaubad",
+    "price": null,
+    "price/unit": "1,25 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Paberk\u00e4ter\u00e4tt Blossom Jumbo 2-kihiline 400 lehte",
+    "price": "2.79",
+    "price/unit": "2,79 \u20ac/tk",
+    "barcode": "4770023348774"
+  },
+  {
+    "name": "Tualettpaber Nature Lover, 3-kihiline, ZEWA, 16 rl",
+    "price": "6.39",
+    "price/unit": "0,40 \u20ac/rl",
+    "barcode": "7322540621693"
+  },
+  {
+    "name": "Lemmikloomakaubad",
+    "price": null,
+    "price/unit": "11,06 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Majapidamispaber Design 4 rulli, ZEWA",
+    "price": "3.19",
+    "price/unit": "0,80 \u20ac/rl",
+    "barcode": "7322540872842"
+  },
+  {
+    "name": "N\u00f5udepesusvammid, SELVER, 10 tk",
+    "price": "0.69",
+    "price/unit": "0,07 \u20ac/tk",
+    "barcode": "4770784390913"
+  },
+  {
+    "name": "Majapidamispaber poolleht, SERLA, 3 rl",
+    "price": "2.25",
+    "price/unit": "0,75 \u20ac/rl",
+    "barcode": "1,59 \u20ac"
+  },
+  {
+    "name": "Tualettpaber Family deco 3-kihil, GRITE, 8 rl",
+    "price": "2.59",
+    "price/unit": "0,32 \u20ac/rl",
+    "barcode": "4770023620719"
+  },
+  {
+    "name": "Torupuhastusvahend, TORUSIIL, 1 l",
+    "price": "1.79",
+    "price/unit": "1,79 \u20ac/tk",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Paberk\u00e4ter\u00e4tt Orchidea Gold 3-kihiline 200 lehte, GRITE, 1 rl",
+    "price": "2.29",
+    "price/unit": "2,29 \u20ac/rl",
+    "barcode": "1,49 \u20ac"
+  },
+  {
+    "name": "Tualettpaber Deluxe Pure White,, ZEWA, 8 rl",
+    "price": "3.99",
+    "price/unit": "0,50 \u20ac/rl",
+    "barcode": "7322540313345"
+  },
+  {
+    "name": "Grills\u00fcsi sangaga, GRILLISTI BY BIOLAN, 15 L",
+    "price": "2.69",
+    "price/unit": "0,18 \u20ac/l",
+    "barcode": "6411960010109"
+  },
+  {
+    "name": "Majapidamispaber Wisch&Weg Sparblatt, 2-kihiline, ZEWA, 4 rl",
+    "price": "3.79",
+    "price/unit": "0,95 \u20ac/rl",
+    "barcode": "7322540833614"
+  },
+  {
+    "name": "Svammlapid niisutatud, , 3 tk",
+    "price": "0.99",
+    "price/unit": "0,33 \u20ac/tk",
+    "barcode": "4770784390975"
+  },
+  {
+    "name": "Tualettpaber Nature Lover, 3-kihiline, ZEWA, 8 rl",
+    "price": "3.29",
+    "price/unit": "0,41 \u20ac/rl",
+    "barcode": "7322540877878"
+  },
+  {
+    "name": "Tualettpaber, 3-kihiline, LAMBI, 8 rl",
+    "price": "3.99",
+    "price/unit": "0,50 \u20ac/rl",
+    "barcode": "6414300152460"
+  },
+  {
+    "name": "Majapidamispaber XXL, SERLA, 1 rl",
+    "price": "3.99",
+    "price/unit": "3,99 \u20ac/rl",
+    "barcode": "6414300104032"
+  },
+  {
+    "name": "Pr\u00fcgikotid sulguriga 35l, MCLEAN, 15 tk",
+    "price": "1.19",
+    "price/unit": "0,08 \u20ac/tk",
+    "barcode": "4742002002359"
+  },
+  {
+    "name": "Paberk\u00e4ter\u00e4tt Blossom, 2-kihiline, GRITE, 120 tk",
+    "price": "1.19",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "4770023625929"
+  },
+  {
+    "name": "Paberk\u00e4ter\u00e4tt Nature Lover, ZEWA, 4 rl",
+    "price": "2.69",
+    "price/unit": "0,67 \u20ac/rl",
+    "barcode": "7322540877953"
+  },
+  {
+    "name": "Lehtk\u00e4ter\u00e4tt Easy Standard, 2-kihiline, ZEWA, 120 tk",
+    "price": "1.69",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "1,19 \u20ac"
+  },
+  {
+    "name": "Pr\u00fcgikotid sulguriga 35l, DREAMHOME, 15 tk",
+    "price": "1.49",
+    "price/unit": "0,10 \u20ac/tk",
+    "barcode": "4742002001352"
+  },
+  {
+    "name": "S\u00f6\u00f6gitarvikute komplekt, ELISE, komplekt",
+    "price": "0.15",
+    "price/unit": "0,15 \u20ac/tk",
+    "barcode": "4742002006593"
+  },
+  {
+    "name": "Tualettpaber Delux Pure White, 3, ZEWA, 16 rl",
+    "price": "7.99",
+    "price/unit": "0,50 \u20ac/rl",
+    "barcode": "4,79 \u20ac"
+  },
+  {
+    "name": "Lehtk\u00e4ter\u00e4tik, SERLA, 100 tk",
+    "price": "1.35",
+    "price/unit": "0,01 \u20ac/tk",
+    "barcode": "6414300343448"
+  },
+  {
+    "name": "Tualettpaber Deluxe, 3-kihiline, ZEWA, 4 rl",
+    "price": "1.99",
+    "price/unit": "0,50 \u20ac/rl",
+    "barcode": "7322540313369"
+  },
+  {
+    "name": "Terra Cruz Coleccion Reserva Cabernet Sauvignon 75 cl",
+    "price": "5.99",
+    "price/unit": "7,99 \u20ac/l",
+    "barcode": "7804651560745"
+  },
+  {
+    "name": "Majapidamis- ja kodukaubad",
+    "price": null,
+    "price/unit": "2,49 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Majapidamis- ja kodukaubad",
+    "price": null,
+    "price/unit": "3,77 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Majapidamis- ja kodukaubad",
+    "price": null,
+    "price/unit": "0,23 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Majapidamis- ja kodukaubad",
+    "price": null,
+    "price/unit": "4,99 \u20ac/rl",
+    "barcode": null
+  },
+  {
+    "name": "Havana Club Anejo 3YO rumm 50 cl",
+    "price": "12.49",
+    "price/unit": "24,98 \u20ac/l",
+    "barcode": "8501110089319"
+  },
+  {
+    "name": "Terra Cruz Coleccion Reserva Shiraz 75 cl",
+    "price": "5.99",
+    "price/unit": "7,99 \u20ac/l",
+    "barcode": "7804651560752"
+  },
+  {
+    "name": "Totino Lime 1 L",
+    "price": "5.29",
+    "price/unit": "5,29 \u20ac/l",
+    "barcode": "5901064764455"
+  },
+  {
+    "name": "Nisujahu 550D, SELVER, 2 kg",
+    "price": "0.79",
+    "price/unit": "0,40 \u20ac/kg",
+    "barcode": "4740581300286"
+  },
+  {
+    "name": "Tume \u00f5lu Karksi Must Nunn 500 ml pudel",
+    "price": "1.29",
+    "price/unit": "2,58 \u20ac/l",
+    "barcode": "\u00d5lu 6%"
+  },
+  {
+    "name": "Hele \u00f5lu Karksi Blond Munk 500 ml pudel",
+    "price": "1.29",
+    "price/unit": "2,58 \u20ac/l",
+    "barcode": "Hele \u00f5lu 6%"
+  },
+  {
+    "name": "Magistr Divin De Lux X.O. giftbox 50 cl",
+    "price": "14.59",
+    "price/unit": "29,18 \u20ac/l",
+    "barcode": "4840044006554"
+  },
+  {
+    "name": "Tanqueray Gin 70 cl",
+    "price": "22.9",
+    "price/unit": "32,71 \u20ac/l",
+    "barcode": "5000281015248"
+  },
+  {
+    "name": "Allikavesi Vittel, VITTEL, 1,5 L",
+    "price": "1.29",
+    "price/unit": "0,86 \u20ac/l",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "Alkoholivaba \u00f5lu Original, CLAUSTHALER, 330 ml pudel",
+    "price": "0.89",
+    "price/unit": "2,70 \u20ac/l",
+    "barcode": "0,69 \u20ac"
+  },
+  {
+    "name": "Apelsini-mangomaitseline karboniseerimata jook, VICHY FRESH, 1,5 L",
+    "price": "1.09",
+    "price/unit": "0,73 \u20ac/l",
+    "barcode": "0,69 \u20ac"
+  },
+  {
+    "name": "Pirni-banaani smuuti, PAI, 280 ml",
+    "price": "1.59",
+    "price/unit": "5,68 \u20ac/l",
+    "barcode": "1,09 \u20ac"
+  },
+  {
+    "name": "Kookose-ananassi smuuti, PAI, 280 ml",
+    "price": "1.59",
+    "price/unit": "5,68 \u20ac/l",
+    "barcode": "1,09 \u20ac"
+  },
+  {
+    "name": "Apelsini limonaad, EFFERVE, 75 cl",
+    "price": "4.79",
+    "price/unit": "6,39 \u20ac/l",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Karboniseeritud vesi \u00f5unamaitseline, VICHY FRESH, 1,5 L",
+    "price": "1.09",
+    "price/unit": "0,73 \u20ac/l",
+    "barcode": "0,79 \u20ac"
+  },
+  {
+    "name": "Limonaad punase apelsini, EFFERVE, 75 cl",
+    "price": "4.99",
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": "3,99 \u20ac"
+  },
+  {
+    "name": "Looduslik mineraalvesi gaseerimata, EVIAN, 1,5 L",
+    "price": "1.49",
+    "price/unit": "0,99 \u20ac/l",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Apelsinimaitseline gaseerimata isotooniline spordijook, OSHEE, 750 ml",
+    "price": "1.19",
+    "price/unit": "1,59 \u20ac/l",
+    "barcode": "0,89 \u20ac"
+  },
+  {
+    "name": "Karboniseerimata troopiliste viljade maitseline jook vitamiinide ja mineraaltoitainetega, VICHY VITAMIN DAILY, 750 ml",
+    "price": "0.99",
+    "price/unit": "1,32 \u20ac/l",
+    "barcode": "0,79 \u20ac"
+  },
+  {
+    "name": "Puuviljamaitseline gaseerimata isotooniline spordijook, OSHEE, 750 ml",
+    "price": "1.19",
+    "price/unit": "1,59 \u20ac/l",
+    "barcode": "0,89 \u20ac"
+  },
+  {
+    "name": "Energiajook, STARTER, 500 ml",
+    "price": "0.99",
+    "price/unit": "1,98 \u20ac/l",
+    "barcode": "0,66 \u20ac"
+  },
+  {
+    "name": "Alkoholivaba siider Pirni, Kopparbergs, 500 ml",
+    "price": "1.29",
+    "price/unit": "2,58 \u20ac/l",
+    "barcode": "1,09 \u20ac"
+  },
+  {
+    "name": "Soodushinnaga tooted",
+    "price": null,
+    "price/unit": "9,30 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Apelsinikoore t\u00fckid tumedas \u0161okolaadis  karp, SUN VITA, 150 g",
+    "price": "3.79",
+    "price/unit": "25,27 \u20ac/kg",
+    "barcode": "2,79 \u20ac"
+  },
+  {
+    "name": "Puuviljapallid troopilise maitsega, SUN VITA, 80 g",
+    "price": "1.69",
+    "price/unit": "21,13 \u20ac/kg",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Puuviljapallid maasikamaitselised, SUN VITA, 80 g",
+    "price": "1.69",
+    "price/unit": "21,13 \u20ac/kg",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Puuviljapallid mustikamaitselised, SUN VITA, 80 g",
+    "price": "1.69",
+    "price/unit": "21,13 \u20ac/kg",
+    "barcode": "1,29 \u20ac"
+  },
+  {
+    "name": "Soodushinnaga tooted",
+    "price": null,
+    "price/unit": "6,03 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Soodushinnaga tooted",
+    "price": null,
+    "price/unit": "6,65 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Soodushinnaga tooted",
+    "price": null,
+    "price/unit": "7,99 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Ploom tumedas \u0161okolaadis, SUN VITA, 100 g",
+    "price": "1.99",
+    "price/unit": "19,90 \u20ac/kg",
+    "barcode": "1,49 \u20ac"
+  },
+  {
+    "name": "Ploom tumedas \u0161okolaadis  karp, SUN VITA, 200 g",
+    "price": "3.79",
+    "price/unit": "18,95 \u20ac/kg",
+    "barcode": "2,79 \u20ac"
+  },
+  {
+    "name": "Puuviljabatoonide mix 10*15g, SUN VITA, 150 g",
+    "price": "2.79",
+    "price/unit": "18,60 \u20ac/kg",
+    "barcode": "2,19 \u20ac"
+  },
+  {
+    "name": "Apelsinikoore t\u00fckid tumedas \u0161okolaadis, SUN VITA, 90 g",
+    "price": "1.99",
+    "price/unit": "22,11 \u20ac/kg",
+    "barcode": "1,49 \u20ac"
+  },
+  {
+    "name": "Mannavaht, SELVERI K\u00d6\u00d6K, 200 g",
+    "price": "0.59",
+    "price/unit": "2,95 \u20ac/kg",
+    "barcode": "4740581108820"
+  },
+  {
+    "name": "Maitsekohv Amaretto, GURMANS, 125 g",
+    "price": "4.19",
+    "price/unit": "33,52 \u20ac/kg",
+    "barcode": "5413165700022"
+  },
+  {
+    "name": "Maitsekohv Irish Creme, GURMANS, 125 g",
+    "price": "4.19",
+    "price/unit": "33,52 \u20ac/kg",
+    "barcode": "5413165700008"
+  },
+  {
+    "name": "Filtri- ja presskannukohv Brazil, PAULIG, 500 g",
+    "price": "5.29",
+    "price/unit": "10,58 \u20ac/kg",
+    "barcode": "3,29 \u20ac"
+  },
+  {
+    "name": "Filtrikohv Presidentti Original, PAULIG, 250 g",
+    "price": "3.49",
+    "price/unit": "13,96 \u20ac/kg",
+    "barcode": "6418474020020"
+  },
+  {
+    "name": "Kanas\u00fclt, SELVERI K\u00d6\u00d6K, 300 g",
+    "price": "1.39",
+    "price/unit": "4,63 \u20ac/kg",
+    "barcode": "4740581108813"
+  },
+  {
+    "name": "Alkoholivaba \u00f5unasiider, MULL\u00b0, 330 ml",
+    "price": "2.59",
+    "price/unit": "7,85 \u20ac/l",
+    "barcode": "CITY CIDER O\u00dc"
+  },
+  {
+    "name": "Lihas\u00fclt, SELVERI K\u00d6\u00d6K, 300 g",
+    "price": "2.49",
+    "price/unit": "8,30 \u20ac/kg",
+    "barcode": "4740581108806"
+  },
+  {
+    "name": "Kr\u00e4supeakook kirssidega, SELVERI K\u00d6\u00d6K, 550 g",
+    "price": "3.99",
+    "price/unit": "7,25 \u20ac/kg",
+    "barcode": "4740581108837"
+  },
+  {
+    "name": "Special Blend tume r\u00f6st, KULTA KATRIINA, 450 g",
+    "price": "4.99",
+    "price/unit": "11,09 \u20ac/kg",
+    "barcode": "6420101882567"
+  },
+  {
+    "name": "Seljakott D. Giga must, DEUTER",
+    "price": "49.9",
+    "price/unit": "49,90 \u20ac/tk",
+    "barcode": "4046051047843"
+  },
+  {
+    "name": "Balance Superfood blend, BOOST YOURSELF, 200 g",
+    "price": "23.9",
+    "price/unit": "119,50 \u20ac/kg",
+    "barcode": "4742983017229"
+  },
+  {
+    "name": "Mitmeviljajook kaktuse-sidruni-\u00f5una, TYMBARK, 1 L",
+    "price": "1.39",
+    "price/unit": "1,39 \u20ac/l",
+    "barcode": "5900334001047"
+  },
+  {
+    "name": "Korrektuurroller ADDICT, 5mm 6m, assortii",
+    "price": "0.59",
+    "price/unit": "0,59 \u20ac/tk",
+    "barcode": "6947503758851"
+  },
+  {
+    "name": "Uudistooted",
+    "price": null,
+    "price/unit": "18,95 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Uudistooted",
+    "price": null,
+    "price/unit": "159,80 \u20ac/l",
+    "barcode": null
+  },
+  {
+    "name": "Ristik",
+    "price": "1.7",
+    "price/unit": "1,70 tk",
+    "barcode": "4740433000081"
+  },
+  {
+    "name": "Uudistooted",
+    "price": null,
+    "price/unit": "19,19 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Postimees n\u00e4dalavahetus",
+    "price": "2.5",
+    "price/unit": "2,50 \u20ac/tk",
+    "barcode": "9771406098014"
+  },
+  {
+    "name": "Tervendaja",
+    "price": "2.2",
+    "price/unit": "2,20 \u20ac/tk",
+    "barcode": "9771736236018"
+  },
+  {
+    "name": "Super Kuma",
+    "price": "1.7",
+    "price/unit": "\u00a0",
+    "barcode": "4741183200011"
+  },
+  {
+    "name": "Postimees",
+    "price": "2",
+    "price/unit": "2,00 \u20ac/tk",
+    "barcode": "9771406098007"
+  },
+  {
+    "name": "Klaasipesuvedelik suvine, ALFA-KEM, 4 l",
+    "price": "1.69",
+    "price/unit": "0,42 \u20ac/l",
+    "barcode": "4740060009877"
+  },
+  {
+    "name": "Ajaleht MK Estonija",
+    "price": "1.5",
+    "price/unit": "\u00a0",
+    "barcode": "9771736189017"
+  },
+  {
+    "name": "Proteiinibatoon Coconut&Choco, BAREBELLS, 55 g",
+    "price": "2.49",
+    "price/unit": "45,27 \u20ac/kg",
+    "barcode": "7340001800487"
+  },
+  {
+    "name": "TV-saatekava",
+    "price": "0.89",
+    "price/unit": "\u00a0",
+    "barcode": "9771406574006"
+  },
+  {
+    "name": "Liim, Apli PVA, 100g",
+    "price": "0.99",
+    "price/unit": "0,99 \u20ac/tk",
+    "barcode": "8410782128496"
+  },
+  {
+    "name": "\u00d5htuleht (reede)",
+    "price": "1.25",
+    "price/unit": "\u00a0",
+    "barcode": "9771406617024"
+  },
+  {
+    "name": "TV Nedelja",
+    "price": "0.89",
+    "price/unit": "\u00a0",
+    "barcode": "9771406573009"
+  },
+  {
+    "name": "Autoleht",
+    "price": "1.99",
+    "price/unit": "1,99 \u20ac/tk",
+    "barcode": "9771406500005"
+  },
+  {
+    "name": "\u0160okolaad Tupla Protein, TUPLA, 55 g",
+    "price": "1.69",
+    "price/unit": "30,73 \u20ac/kg",
+    "barcode": "6420256014141"
+  },
+  {
+    "name": "\u00d5htuleht (laup\u00e4ev)",
+    "price": "1.55",
+    "price/unit": "\u00a0",
+    "barcode": "9771406617017"
+  },
+  {
+    "name": "Maaleht",
+    "price": "1.6",
+    "price/unit": "1,60 tk",
+    "barcode": "9771406298001"
+  },
+  {
+    "name": "Must muld, BIOLAN, 5l",
+    "price": "1.99",
+    "price/unit": "0,40 \u20ac/l",
+    "barcode": "4742030006596"
+  },
+  {
+    "name": "Naisteleht",
+    "price": "1.49",
+    "price/unit": "\u00a0",
+    "barcode": "9771736379005"
+  },
+  {
+    "name": "LP",
+    "price": "1.6",
+    "price/unit": "1,60 \u20ac/tk",
+    "barcode": "9772228226012"
+  },
+  {
+    "name": "\u00d5htuleht",
+    "price": "1.15",
+    "price/unit": "\u00a0",
+    "barcode": "9771406617000"
+  },
+  {
+    "name": "Kroonika",
+    "price": "1.79",
+    "price/unit": "1,79 tk",
+    "barcode": "9771406058001"
+  },
+  {
+    "name": "Teleleht",
+    "price": "0.9",
+    "price/unit": "0,90 \u20ac/tk",
+    "barcode": "9771406102001"
+  },
+  {
+    "name": "Eesti Ekspress",
+    "price": "2.29",
+    "price/unit": "2,29 \u20ac/tk",
+    "barcode": "9771406110006"
+  },
+  {
+    "name": "P\u00f5ltsamaa Gl\u00f6gi klassikaline 70 cl",
+    "price": "5.59",
+    "price/unit": "7,99 \u20ac/l",
+    "barcode": "4740029031147"
+  },
+  {
+    "name": "Vabaajakaubad",
+    "price": null,
+    "price/unit": "6,49 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Lehereha Solid L, FISKARS",
+    "price": "20.9",
+    "price/unit": "\u00a0",
+    "barcode": "6411501350169"
+  },
+  {
+    "name": "Vabaajakaubad",
+    "price": null,
+    "price/unit": "7,29 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Vabaajakaubad",
+    "price": null,
+    "price/unit": "6,95 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Aialabidas, teravaotsaline, FISKARS",
+    "price": "21.9",
+    "price/unit": "21,90 \u20ac/tk",
+    "barcode": "6411501314130"
+  },
+  {
+    "name": "Vabaajakaubad",
+    "price": null,
+    "price/unit": "6,49 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Martsipanibatoon Piano, MOZART, 45 g",
+    "price": "2.19",
+    "price/unit": "48,67 \u20ac/kg",
+    "barcode": "4101730035136"
+  },
+  {
+    "name": "Rigol Cava Semi Sec 75 cl",
+    "price": "6.89",
+    "price/unit": "9,19 \u20ac/l",
+    "barcode": "8410035018000"
+  },
+  {
+    "name": "Maiustus s\u00fcdamed karbis, MOZART, 80 g",
+    "price": "4.79",
+    "price/unit": "59,88 \u20ac/kg",
+    "barcode": "4101730003852"
+  },
+  {
+    "name": "Vahel.liikuv.teradega oksak\u00e4\u00e4r, FISKARS",
+    "price": "14.49",
+    "price/unit": "14,49 \u20ac/tk",
+    "barcode": "6411501112606"
+  },
+  {
+    "name": "Terra Serena Prosecco Spumante 75 cl",
+    "price": "9.69",
+    "price/unit": "12,92 \u20ac/l",
+    "barcode": "8010719000828"
+  },
+  {
+    "name": "Kommikarp Swiss Luxury Selection, LINDT, 230g",
+    "price": "15.99",
+    "price/unit": "69,52 \u20ac/kg",
+    "barcode": "10,99 \u20ac"
+  },
+  {
+    "name": "Fresita 75 cl",
+    "price": "11.49",
+    "price/unit": "15,32 \u20ac/l",
+    "barcode": "7804345003145"
+  },
+  {
+    "name": "Mumm Cordon Rouge Brut 75 cl",
+    "price": "29.9",
+    "price/unit": "39,87 \u20ac/l",
+    "barcode": "3043700123812"
+  },
+  {
+    "name": "Codorniu Cava Clasico Brut 75 cl",
+    "price": "8.59",
+    "price/unit": "11,45 \u20ac/l",
+    "barcode": "8410013381010"
+  },
+  {
+    "name": "Rigol Cava Brut 75 cl",
+    "price": "6.89",
+    "price/unit": "9,19 \u20ac/l",
+    "barcode": "8410035019007"
+  },
+  {
+    "name": "Klaasipuhastusvahend Citrus, CLIN, 500 ml",
+    "price": "2.29",
+    "price/unit": "4,58 \u20ac/l",
+    "barcode": "9000100866149"
+  },
+  {
+    "name": "Freixenet Carta Nevada 75 cl",
+    "price": "8.99",
+    "price/unit": "11,99 \u20ac/l",
+    "barcode": "8410036002015"
+  },
+  {
+    "name": "Kommikarp Ferrero Collection T15, FERRERO, 175g",
+    "price": "5.99",
+    "price/unit": "34,83 \u20ac/kg",
+    "barcode": "5,39 \u20ac"
+  },
+  {
+    "name": "Sovetskoje Igristoje Sweet Sparkling Wine 75 cl",
+    "price": "3.99",
+    "price/unit": "5,32 \u20ac/l",
+    "barcode": "4750012434855"
+  },
+  {
+    "name": "Campo Viejo Cava Brut Reserva 75 cl",
+    "price": "6.69",
+    "price/unit": "8,92 \u20ac/l",
+    "barcode": "8410302105518"
+  },
+  {
+    "name": "Klaasipesuvahend Sensitive, MAYERI, 500 ml",
+    "price": "1.69",
+    "price/unit": "3,38 \u20ac/l",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "T\u00f6rley Charmant 75 cl",
+    "price": "5.39",
+    "price/unit": "7,19 \u20ac/l",
+    "barcode": "5998815750362"
+  },
+  {
+    "name": "T\u00f6rley Muscateller 75 cl",
+    "price": "5.39",
+    "price/unit": "7,19 \u20ac/l",
+    "barcode": "5998815750379"
+  },
+  {
+    "name": "Freixenet Cordon Negro Brut 75 cl",
+    "price": "6.99",
+    "price/unit": "9,32 \u20ac/l",
+    "barcode": "8410036009090"
+  },
+  {
+    "name": "Rulett kummikomm, HARIBO, 25 g",
+    "price": "0.29",
+    "price/unit": "11,60 \u20ac/kg",
+    "barcode": "4001686372234"
+  },
+  {
+    "name": "Martini Asti 75 cl",
+    "price": "7.49",
+    "price/unit": "9,99 \u20ac/l",
+    "barcode": "8000570005056"
+  },
+  {
+    "name": "Hooaja- ja p\u00fchadekaubad",
+    "price": null,
+    "price/unit": "5,99 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\u00a0"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": "Uudised",
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": "Uudised",
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": "Sealihas\u00fclt, OSKAR, 330 g",
+    "price": "2.19",
+    "price/unit": "6,64 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Uudised",
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": "Viiner Ehe, RANNAROOTSI, 330 g",
+    "price": "2.29",
+    "price/unit": "6,94 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Pereviiner, RAKVERE LK, 500 g",
+    "price": "1.29",
+    "price/unit": "2,58 \u20ac/kg",
+    "barcode": "4740003006536"
+  },
+  {
+    "name": "Kuningate sink, KARNI, 120 g",
+    "price": "1.59",
+    "price/unit": "13,25 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Vasikamaksapasteet, RANNAROOTSI, 180 g",
+    "price": "1.19",
+    "price/unit": "6,61 \u20ac/kg",
+    "barcode": "0,99 \u20ac"
+  },
+  {
+    "name": "Broilerifilee hakkliha, TALLEGG, 300 g",
+    "price": "2.69",
+    "price/unit": "8,97 \u20ac/kg",
+    "barcode": "1,99 \u20ac"
+  },
+  {
+    "name": "Suitsupeekon, OSKAR, 120 g",
+    "price": "1.49",
+    "price/unit": "12,42 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Krabimaitseline liha Lumekrabi, VICI, 120 g",
+    "price": "1.29",
+    "price/unit": "10,75 \u20ac/kg",
+    "barcode": "4770190372145"
+  },
+  {
+    "name": "Lasteviiner, RAKVERE LK, 290 g",
+    "price": "1.49",
+    "price/unit": "5,14 \u20ac/kg",
+    "barcode": "1,19 \u20ac"
+  },
+  {
+    "name": "Lihapihvid, MAKS&MOORITS, 400 g",
+    "price": "2.39",
+    "price/unit": "5,98 \u20ac/kg",
+    "barcode": "4740171085968"
+  },
+  {
+    "name": "E-vaba Lihaviiner, OSKAR, 125 g",
+    "price": "1.09",
+    "price/unit": "8,72 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Kanafileesink, TALLEGG, 190 g",
+    "price": "1.89",
+    "price/unit": "9,95 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Delikatess kana hakklihasegu, TALLEGG, 300 g",
+    "price": "2.39",
+    "price/unit": "7,97 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Ameerikap\u00e4rane toorsuitsupeekon, RAKVERE LK, 150 g",
+    "price": "1.89",
+    "price/unit": "12,60 \u20ac/kg",
+    "barcode": "4740003009278"
+  },
+  {
+    "name": "Hommikupeekon, N\u00d5O LIHAV\u00dcRST, 135 g",
+    "price": "1.69",
+    "price/unit": "12,52 \u20ac/kg",
+    "barcode": "4740574080553"
+  },
+  {
+    "name": "L\u00f5hefilee jahutatud, \u00fcle 1kg",
+    "price": "14.99",
+    "price/unit": "14,99 \u20ac/kg",
+    "barcode": "2703272000003"
+  },
+  {
+    "name": "Lihaveise delikatess hakkliha, RAKVERE LK, 240 g",
+    "price": "2.99",
+    "price/unit": "12,46 \u20ac/kg",
+    "barcode": "2,50 \u20ac"
+  },
+  {
+    "name": "Kodune hakkliha, RAKVERE LK, 400 g",
+    "price": "1.99",
+    "price/unit": "4,98 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Kodune hakkliha, MAKS&MOORITS, 500 g",
+    "price": "2.39",
+    "price/unit": "4,78 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Eestimaine broilerifilee, TALLEGG, kg",
+    "price": "4.99",
+    "price/unit": "4,99 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Rakvere viiner, RAKVERE LK, 500 g",
+    "price": "1.59",
+    "price/unit": "3,18 \u20ac/kg",
+    "barcode": "4740003005706"
+  },
+  {
+    "name": "Veisehakkliha, RAKVERE LK, 400 g",
+    "price": "2.29",
+    "price/unit": "5,73 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Eestimaine broilerisisefilee, TALLEGG, 400 g",
+    "price": "3.19",
+    "price/unit": "7,98 \u20ac/kg",
+    "barcode": "\r\n"
+  },
+  {
+    "name": "Maksapasteet, SELVERI K\u00d6\u00d6K, 150 g",
+    "price": "0.99",
+    "price/unit": "6,60 \u20ac/kg",
+    "barcode": "4740581108332"
+  },
+  {
+    "name": "Liha- ja kalatooted",
+    "price": null,
+    "price/unit": "12,42 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Melon kollane, kg",
+    "price": "0.99",
+    "price/unit": "0,99 \u20ac/kg",
+    "barcode": "2700012000002"
+  },
+  {
+    "name": "Varajane kapsas, kg",
+    "price": "0.39",
+    "price/unit": "0,39 \u20ac/kg",
+    "barcode": "2700026000005"
+  },
+  {
+    "name": "Salat beebispinat, SELVER, 75 g",
+    "price": "0.99",
+    "price/unit": "13,20 \u20ac/kg",
+    "barcode": "8012566023784"
+  },
+  {
+    "name": "Tomat lahtine, kg",
+    "price": "1.29",
+    "price/unit": "1,29 \u20ac/kg",
+    "barcode": "2702880000009"
+  },
+  {
+    "name": "Liha- ja kalatooted",
+    "price": null,
+    "price/unit": "6,43 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Liha- ja kalatooted",
+    "price": null,
+    "price/unit": "7,30 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Liha- ja kalatooted",
+    "price": null,
+    "price/unit": "5,76 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Mugulsibul, kg",
+    "price": "0.39",
+    "price/unit": "0,39 \u20ac/kg",
+    "barcode": "2700023000008"
+  },
+  {
+    "name": "Beebiporgand, KADARBIKU K\u00d6\u00d6GIVILI, 250 g",
+    "price": "0.99",
+    "price/unit": "3,96 \u20ac/kg",
+    "barcode": "4740175000530"
+  },
+  {
+    "name": "\u00d5un Royal Gala, kg",
+    "price": "2.79",
+    "price/unit": "2,79 \u20ac/kg",
+    "barcode": "2701384000003"
+  },
+  {
+    "name": "Kurk l\u00fchike, kg",
+    "price": "1.59",
+    "price/unit": "1,59 \u20ac/kg",
+    "barcode": "2710065000003"
+  },
+  {
+    "name": "Frillis l\u00f5igatud, tk",
+    "price": "1.49",
+    "price/unit": "1,49 \u20ac/tk",
+    "barcode": "4741116000213"
+  },
+  {
+    "name": "Sidrun, kg",
+    "price": "2.29",
+    "price/unit": "2,29 \u20ac/kg",
+    "barcode": "2700004000003"
+  },
+  {
+    "name": "Lehtsalat potis, GR\u00dcNE FEE, tk",
+    "price": "0.99",
+    "price/unit": "0,99 \u20ac/tk",
+    "barcode": "4741116000015"
+  },
+  {
+    "name": "Paprika punane, kg",
+    "price": "1.49",
+    "price/unit": "1,49 \u20ac/kg",
+    "barcode": "2700017000007"
+  },
+  {
+    "name": "\u00d5un Golden Delicious, kg",
+    "price": "2.79",
+    "price/unit": "2,79 \u20ac/kg",
+    "barcode": "2701379000001"
+  },
+  {
+    "name": "Hele viinamari Victoria, kg",
+    "price": "2.49",
+    "price/unit": "2,49 \u20ac/kg",
+    "barcode": "2700006000001"
+  },
+  {
+    "name": "Kurk Eesti, kg",
+    "price": "2.99",
+    "price/unit": "2,99 \u20ac/kg",
+    "barcode": "2700013000001"
+  },
+  {
+    "name": "Arbuus, kg",
+    "price": "0.59",
+    "price/unit": "0,59 \u20ac/kg",
+    "barcode": "2700062000007"
+  },
+  {
+    "name": "Porgand lahtine, kg",
+    "price": "0.49",
+    "price/unit": "0,49 \u20ac/kg",
+    "barcode": "2700022000009"
+  },
+  {
+    "name": "\u00d5un (erinevad sordid), kg",
+    "price": "0.69",
+    "price/unit": "0,69 \u20ac/kg",
+    "barcode": "2701371000009"
+  },
+  {
+    "name": "Kobartomat, kg",
+    "price": "0.99",
+    "price/unit": "0,99 \u20ac/kg",
+    "barcode": "2700016000008"
+  },
+  {
+    "name": "Pirn Conference, kg",
+    "price": "1.69",
+    "price/unit": "1,69 \u20ac/kg",
+    "barcode": "2701385000002"
+  },
+  {
+    "name": "Kirsskobartomat, 500 g",
+    "price": "2.29",
+    "price/unit": "4,58 \u20ac/kg",
+    "barcode": "4740608061190"
+  },
+  {
+    "name": "Kirssploomtomat, 250 g",
+    "price": "1.49",
+    "price/unit": "5,96 \u20ac/kg",
+    "barcode": "4740608060438"
+  },
+  {
+    "name": "Apelsin Maroc Late, kg",
+    "price": "1.49",
+    "price/unit": "1,49 \u20ac/kg",
+    "barcode": "2700002000005"
+  },
+  {
+    "name": "Banaan, kg",
+    "price": "1.19",
+    "price/unit": "1,19 \u20ac/kg",
+    "barcode": "2700001000006"
+  },
+  {
+    "name": "Puu- ja k\u00f6\u00f6giviljad",
+    "price": null,
+    "price/unit": "13,20 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Puu- ja k\u00f6\u00f6giviljad",
+    "price": null,
+    "price/unit": "7,47 \u20ac/kg",
+    "barcode": null
+  },
+  {
+    "name": "Uudised",
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": "Puu- ja k\u00f6\u00f6giviljad",
+    "price": null,
+    "price/unit": "1,39 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": "Puu- ja k\u00f6\u00f6giviljad",
+    "price": null,
+    "price/unit": "14,99 \u20ac/tk",
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "Ruth Maasalu"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "Rimma Palubis"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": "\r\n"
+  },
+  {
+    "name": null,
+    "price": null,
+    "price/unit": null,
+    "barcode": null
+  }
+]
