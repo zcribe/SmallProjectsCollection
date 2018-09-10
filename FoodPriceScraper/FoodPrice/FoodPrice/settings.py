@@ -14,9 +14,7 @@ BOT_NAME = 'FoodPrice'
 SPIDER_MODULES = ['FoodPrice.spiders']
 NEWSPIDER_MODULE = 'FoodPrice.spiders'
 
-'''
-SPLASH_URL = 'http://192.168.59.103:8050'
-'''
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'FoodPrice (+http://www.yourdomain.com)'
@@ -33,14 +31,6 @@ ROBOTSTXT_OBEY = False
 # DOWNLOAD_DELAY = 3
 
 
-'''
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-}
-'''
-
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
@@ -50,10 +40,6 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
-
-'''
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-'''
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -65,11 +51,6 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 # SPIDER_MIDDLEWARES = {
 #    'FoodPrice.middlewares.FoodpriceSpiderMiddleware': 543,
 # }
-'''
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
-'''
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
@@ -111,3 +92,11 @@ HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 '''
+
+SPLASH_URL = 'http://localhost:8050'
+DOWNLOADER_MIDDLEWARES = {'scrapy_splash.SplashCookiesMiddleware': 723,
+                          'scrapy_splash.SplashMiddleware': 725,
+                          'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810, }
+SPIDER_MIDDLEWARES = {'scrapy_splash.SplashDeduplicateArgsMiddleware': 100, }
+
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'

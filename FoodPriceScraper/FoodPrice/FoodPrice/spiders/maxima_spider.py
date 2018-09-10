@@ -21,9 +21,11 @@ class MaximaSpider(scrapy.Spider):
         name_list = extract_with_xpath('//h3/a[contains (@id, "ctl00_MainContent_lstProduct")]/text()')
         price_list = extract_with_xpath('//td/p[@class="guide"]/strong/text()')
         price_unit = extract_with_xpath("//p[@class='guide']/text()[contains (.,'(')]")
+        category = extract_with_xpath("//div/h1/text()")
 
         for x, y, z in zip(name_list, price_list, price_unit):
             yield {'name': x,
                    'price': y,
-                   'price/unit': z
+                   'price/unit': z,
+                   'category': category
                    }

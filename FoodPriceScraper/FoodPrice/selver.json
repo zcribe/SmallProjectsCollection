@@ -2064,18 +2064,6 @@
     "barcode": "7613033775697"
   },
   {
-    "name": "Enesehooldustarbed",
-    "price": null,
-    "price/unit": "35,60 \u20ac/l",
-    "barcode": null
-  },
-  {
-    "name": "Enesehooldustarbed",
-    "price": null,
-    "price/unit": "0,05 \u20ac/tk",
-    "barcode": null
-  },
-  {
     "name": "Kassikonserv kalkuni-pardit\u00fckkidega, GOURMET GOLD, 85 g",
     "price": "0.65",
     "price/unit": "7,65 \u20ac/kg",
@@ -2182,18 +2170,6 @@
     "price": "0.65",
     "price/unit": "7,65 \u20ac/kg",
     "barcode": "7613033776595"
-  },
-  {
-    "name": "Lemmikloomakaubad",
-    "price": null,
-    "price/unit": "4,28 \u20ac/kg",
-    "barcode": null
-  },
-  {
-    "name": "Lemmikloomakaubad",
-    "price": null,
-    "price/unit": "1,25 \u20ac/l",
-    "barcode": null
   },
   {
     "name": "Paberk\u00e4ter\u00e4tt Blossom Jumbo 2-kihiline 400 lehte",
@@ -2350,30 +2326,6 @@
     "price": "5.99",
     "price/unit": "7,99 \u20ac/l",
     "barcode": "7804651560745"
-  },
-  {
-    "name": "Majapidamis- ja kodukaubad",
-    "price": null,
-    "price/unit": "2,49 \u20ac/tk",
-    "barcode": null
-  },
-  {
-    "name": "Majapidamis- ja kodukaubad",
-    "price": null,
-    "price/unit": "3,77 \u20ac/l",
-    "barcode": null
-  },
-  {
-    "name": "Majapidamis- ja kodukaubad",
-    "price": null,
-    "price/unit": "0,23 \u20ac/tk",
-    "barcode": null
-  },
-  {
-    "name": "Majapidamis- ja kodukaubad",
-    "price": null,
-    "price/unit": "4,99 \u20ac/rl",
-    "barcode": null
   },
   {
     "name": "Havana Club Anejo 3YO rumm 50 cl",
@@ -2536,24 +2488,6 @@
     "price": "1.69",
     "price/unit": "21,13 \u20ac/kg",
     "barcode": "1,29 \u20ac"
-  },
-  {
-    "name": "Soodushinnaga tooted",
-    "price": null,
-    "price/unit": "6,03 \u20ac/l",
-    "barcode": null
-  },
-  {
-    "name": "Soodushinnaga tooted",
-    "price": null,
-    "price/unit": "6,65 \u20ac/l",
-    "barcode": null
-  },
-  {
-    "name": "Soodushinnaga tooted",
-    "price": null,
-    "price/unit": "7,99 \u20ac/l",
-    "barcode": null
   },
   {
     "name": "Ploom tumedas \u0161okolaadis, SUN VITA, 100 g",
@@ -2838,18 +2772,6 @@
     "barcode": "6411501350169"
   },
   {
-    "name": "Vabaajakaubad",
-    "price": null,
-    "price/unit": "7,29 \u20ac/tk",
-    "barcode": null
-  },
-  {
-    "name": "Vabaajakaubad",
-    "price": null,
-    "price/unit": "6,95 \u20ac/tk",
-    "barcode": null
-  },
-  {
     "name": "Aialabidas, teravaotsaline, FISKARS",
     "price": "21.9",
     "price/unit": "21,90 \u20ac/tk",
@@ -2994,106 +2916,10 @@
     "barcode": null
   },
   {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\u00a0"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": "Uudised",
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": "Uudised",
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
     "name": "Sealihas\u00fclt, OSKAR, 330 g",
     "price": "2.19",
     "price/unit": "6,64 \u20ac/kg",
     "barcode": "\r\n"
-  },
-  {
-    "name": "Uudised",
-    "price": null,
-    "price/unit": null,
-    "barcode": null
   },
   {
     "name": "Viiner Ehe, RANNAROOTSI, 330 g",
@@ -3411,90 +3237,6 @@
     "name": "Puu- ja k\u00f6\u00f6giviljad",
     "price": null,
     "price/unit": "7,47 \u20ac/kg",
-    "barcode": null
-  },
-  {
-    "name": "Uudised",
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": "Puu- ja k\u00f6\u00f6giviljad",
-    "price": null,
-    "price/unit": "1,39 \u20ac/tk",
-    "barcode": null
-  },
-  {
-    "name": "Puu- ja k\u00f6\u00f6giviljad",
-    "price": null,
-    "price/unit": "14,99 \u20ac/tk",
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "Ruth Maasalu"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "Rimma Palubis"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": null
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
-    "barcode": "\r\n"
-  },
-  {
-    "name": null,
-    "price": null,
-    "price/unit": null,
     "barcode": null
   }
 ]
