@@ -44,7 +44,11 @@
 {"name": "Libero teipm\u00e4hkmed Comfort 5, 10-16 kg, 50 tk", "price/unit": "12.59/tk", "category": "Teipm\u00e4hkmed"},
 {"name": "Libero teipm\u00e4hkmed Touch 5, 10-14 kg, 44 tk", "price/unit": "13.59/tk", "category": "Teipm\u00e4hkmed"},
 {"name": "Happy teipm\u00e4hkmed Maxi 4, 8-18 kg, 46 tk", "price/unit": "6.99/tk", "category": "Teipm\u00e4hkmed"},
-{"name": "Happy teipm\u00e4hkmed Junior 5, 12-25 kg, 42 tk", "price/unit": "6.99/tk", "category": "Teipm\u00e4hkmed"}[
+  {
+    "name": "Happy teipm\u00e4hkmed Junior 5, 12-25 kg, 42 tk",
+    "price/unit": "6.99/tk",
+    "category": "Teipm\u00e4hkmed"
+  },
 {"name": "Oliivi\u00f5li sidrunimaitseline 250 ml", "price/unit": "2.49/tk", "category": "Maitsestatud oliivi\u00f5li"},
 {"name": "Oliivi\u00f5li basiilikuga 250 ml", "price/unit": "2.49/tk", "category": "Maitsestatud oliivi\u00f5li"},
 {"name": "Oliivi\u00f5li k\u00fc\u00fcslaugumaitseline 250 ml", "price/unit": "2.49/tk", "category": "Maitsestatud oliivi\u00f5li"},
