@@ -7,7 +7,6 @@ class FileRenamer:
     def __init__(self):
         self.this = ""
         self.that = ""
-        self.path = "./"
         self.selection = []
         self.file_counter = 0
 
@@ -26,7 +25,7 @@ class FileRenamer:
             self.that = arguments[2]
 
     def select_dir(self, change_to):
-        self.path = change_to
+        os.chdir(change_to)
 
     def select_files(self):
         self.selection = glob.glob(f"*.{self.this}")
