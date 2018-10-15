@@ -1,12 +1,16 @@
 # SmallProjectsCollection
 A collection of small projects. Gifs for quick overview.
 
+* [File renamer](https://github.com/zcribe/SmallProjectsCollection/tree/master/FileRenamer)
 * [Groceries Price Comparer](https://github.com/zcribe/SmallProjectsCollection/tree/master/FoodPriceScraper/FoodPrice)
 * [VM-To-Hack Translator](https://github.com/zcribe/SmallProjectsCollection/tree/master/VMTranslator)
 * [Hack-To-Binary Assembler](https://github.com/zcribe/SmallProjectsCollection/tree/master/HackAssembler)
 * [Steam-GoG Mod converter](https://github.com/zcribe/SmallProjectsCollection/tree/master/ModConverter)
 * [Kivy Calculator](https://github.com/zcribe/SmallProjectsCollection/tree/master/Kalkulaator)
 
+
+## File renamer
+Simple file renaming tool.
 
 ## Groceries price comparer
 The program crawls local grocery store sites for products in order to create a price comparison. Currently implemented stores: Selver, Maxima. Prisma and Coop planned but they have JS based dynamic sites.
