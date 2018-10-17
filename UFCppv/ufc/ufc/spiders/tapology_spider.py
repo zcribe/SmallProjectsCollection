@@ -3,7 +3,7 @@ import scrapy
 
 class TapologySpider(scrapy.Spider):
     name = 'tapology'
-    '//table[@class="siteSearchResults"]/tr/td/a/@href'
+    bout_conter = 0
 
     def start_requests(self):
         start_url = 'https://www.tapology.com/search/mma-event-figures/ppv-pay-per-view-buys-buyrate'
@@ -19,19 +19,22 @@ class TapologySpider(scrapy.Spider):
 
         def remove_artifacts(input: list) -> list:
             artifacts = ['|', '\n', '\\n']
-            return [a for _ in input if a not in artifacts]
+            return [a for a in input if a not in artifacts]
 
         def length_correction(a: list, b: list) -> tuple:
             print(list(zip(a, b)))
             if len(a) == len(b):
                 return a, b
 
-        length_correction(header_list, contents_list)
+        return remove_artifacts(header_list), remove_artifacts(contents_list)
+
+        # TODO: Paranda funktsioon
 
     def parse(self, response):
         card = {}
         event = {}
-        counter = 0
+        counter = 0  # TODO: ebavajalik vb
+        self.bout_conter = 0
 
         def extract_with_xpath(query):
             return response.xpath(query).extract()
@@ -50,12 +53,11 @@ class TapologySpider(scrapy.Spider):
             counter += 1
 
         event['card'] = card
-
         yield event
 
     def parse_bout(self, response):
         def extract_with_xpath(query):
-            return response.xpath(query).extract()
+            return response.xpath(query)[self.bout_conter].extract()
 
         result = extract_with_xpath('//span[@class="result"]/text()')
         time = extract_with_xpath('//span[@class="time"]/text()')
