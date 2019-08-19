@@ -1,0 +1,1 @@
+# Simple vanilla JS todo list
