@@ -7,6 +7,8 @@ A collection of small projects. Gifs for quick overview.
 * [Hack-To-Binary Assembler](https://github.com/zcribe/SmallProjectsCollection/tree/master/HackAssembler)
 * [Steam-GoG Mod converter](https://github.com/zcribe/SmallProjectsCollection/tree/master/ModConverter)
 * [Kivy Calculator](https://github.com/zcribe/SmallProjectsCollection/tree/master/Kalkulaator)
+* [React Native Pomodoro timer](https://github.com/zcribe/SmallProjectsCollection/tree/master/PomodoroTimer)
+* [JS Todo list](https://github.com/zcribe/SmallProjectsCollection/tree/master/SimpleTodo)
 
 
 ## File renamer
@@ -29,3 +31,9 @@ The program makes mods downloaded from Steam Workshop run GoG game by creating d
 
 ## Kivy based calculator
 Testing Kivy. 
+
+## React Native pomodoro timer
+Testing React Native by creating a [Pomodoro timer](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+
+## Javascript todo list
+Simple JS todo list.
