@@ -44,3 +44,5 @@ def tick(time_target):
 
 def create_target_time(target_minutes):
     return time() + target_minutes * ONE_MINUTE
+
+run()
