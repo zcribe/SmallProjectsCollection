@@ -89,4 +89,5 @@ def create_target_time(target_minutes: int, current_time: float) -> float:
     return current_time + target_minutes * ONE_MINUTE
 
 
-run()
+if __name__ == "__main__":
+    run()
