@@ -57,32 +57,33 @@ def run():
         write_log(target_minutes)
 
 
-def timer(target_minutes: int, testing=False) -> int:
+def timer(target_minutes: int) -> int:
     time_target = create_target_time(target_minutes, time())
     while time() < time_target:
         tick(time_target)
-        if not testing:
-            sleep(1)
+        sleep(1)
     return target_minutes
 
 
-def write_log(minutes: int):
+def write_log(minutes: int, testing=False):
     with open('session_log.csv', 'w', newline='') as csvfile:
         log_writer = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         today = datetime.datetime.now(datetime.timezone.utc)
         log_writer.writerow([today, minutes])
 
 
-def tick(time_target: float, cast=True):
-    if cast:
-        broadcast(time_target)
+def tick(time_target: float, broadcast=True):
+    if broadcast:
+        print(create_message(time_target))
 
 
-def broadcast(time_target: float):
+def create_message(time_target: float) -> str:
     time_left = time_target - time()
+    print(time())
     minutes = floor(time_left / ONE_MINUTE)
     seconds = round(time_left - minutes * ONE_MINUTE)
-    print(f"{minutes}:{seconds}")
+    message = f"{minutes}:{seconds}"
+    return message
 
 
 def create_target_time(target_minutes: int, current_time: float) -> float:
