@@ -14,17 +14,18 @@ LOOP_LIMIT = 9999
 
 # Console
 parser = argparse.ArgumentParser(description='===== Pomodoro timer CLI =====')
-parser.add_argument('-wt', '-worktime', type=int, help='Minutes of work in a work sessions (default 25)',
+parser.add_argument('-wt', '-worktime', type=int, help=f'Minutes of work in a work sessions (default {TIME_WORK})',
                     default=TIME_WORK, nargs='?')
-parser.add_argument('-rt', '-resttime', type=int, help='Minutes of rest in a rest sessions (default 5)',
+parser.add_argument('-rt', '-resttime', type=int, help=f'Minutes of rest in a rest sessions (default {TIME_REST})',
                     default=TIME_REST, nargs='?')
-parser.add_argument('-rtl', '-resttimelong', type=int, help='Minutes of rest in a long rest sessions (default 30)',
+parser.add_argument('-rtl', '-resttimelong', type=int,
+                    help=f'Minutes of rest in a long rest sessions (default {TIME_REST_LONG})',
                     default=TIME_REST_LONG, nargs='?')
 parser.add_argument('-mws', '-maxworksessions', type=int,
-                    help='Number of work sessions cycles before long rest session (default 4)',
+                    help=f'Number of work sessions cycles before long rest session (default {SESSIONS_WORK_MAX})',
                     default=SESSIONS_WORK_MAX, nargs='?')
 parser.add_argument('-ll', '-looplimit', type=int,
-                    help='Maximum number of total sessions (default 9999)', default=LOOP_LIMIT, nargs='?')
+                    help=f'Maximum number of total sessions (default 9999)', default=LOOP_LIMIT, nargs='?')
 parser.add_argument('-log', '-logsessions', type=bool,
                     help='Should sessions be logged (False)', default=False, nargs='?')
 
