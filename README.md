@@ -1,6 +1,7 @@
 # SmallProjectsCollection
 A collection of small projects. Gifs for quick overview.
 
+* [Pomodoro Timer](https://github.com/zcribe/SmallProjectsCollection/tree/master/PomodoroTimer)
 * [File renamer](https://github.com/zcribe/SmallProjectsCollection/tree/master/FileRenamer)
 * [Groceries Price Comparer](https://github.com/zcribe/SmallProjectsCollection/tree/master/FoodPriceScraper/FoodPrice)
 * [VM-To-Hack Translator](https://github.com/zcribe/SmallProjectsCollection/tree/master/VMTranslator)
@@ -10,6 +11,8 @@ A collection of small projects. Gifs for quick overview.
 * [React Native Pomodoro timer](https://github.com/zcribe/SmallProjectsCollection/tree/master/PomodoroTimer)
 * [JS Todo list](https://github.com/zcribe/SmallProjectsCollection/tree/master/SimpleTodo)
 
+## Focus timer / Pomodoro timer implementation
+An implementaion of [Pomodoro techinique](https://en.wikipedia.org/wiki/Pomodoro_Technique) in a timer app. 
 
 ## File renamer
 Simple file renaming tool.
